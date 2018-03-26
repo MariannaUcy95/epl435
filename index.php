@@ -53,7 +53,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">The Fitness Club</a>
+          <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/logo.png" style="width:300px;height:100px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -63,11 +63,27 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#classes"><i class="fa fa-calendar"></i> Classes</a>
+            <li class="dropdown">
+              <a class="nav-link js-scroll-trigger" href="#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="">Zumba</a>
+                        <a href="">Power Yoga</a>
+                        <a href="">Pilates</a>
+                        <a href="">Body Attack</a>
+                        <a href="">Circuit Training</a>
+                        <a href="">TRX</a>
+                    </div>
             </li>    
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities</a>
+            <li class="dropdown">
+              <a class="nav-link js-scroll-trigger" href="#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
+                 <div class="dropdown-content">
+                        <a href="facilities.php#main_workout_area">Main Workout Area</a>
+                        <a href="facilities.php#cardio_area">Cardio Area</a>
+                        <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
+                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
+                        <a href="facilities.php#personal_training">Personal Training</a>
+                        <a href="facilities.php#other_facilities">Other Facilities</a>
+                </div>
             </li>      
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#shop"><i class="material-icons" style="font-size:18px;">shopping_cart</i> Shop</a>
@@ -454,14 +470,11 @@
               </div>
             </div>                
             </div>
-            </div>
-   <a href="#classes" class="btn btn-circle js-scroll-trigger" >
-                <i class="fa fa-angle-double-down animated"></i>
-                </a>
+          </div>
         </div>
     </section>
       
-   <section id="facilities" class="result-section content-section text-center">
+   <section id="facilities" class="content-section text-center">
      <div class="container" id="roww">
         <div >
             <h3>Facilities</h3>
@@ -483,7 +496,7 @@
             </div>
              
             <div class="container">
-            <h6>Group exercise clasees</h6>
+            <h6>Group exercise classes</h6>
                 <img src="images/groupexerciseclasses.jpg" class="image" style="width:100%">
               <div class="middle">
                   <a href="pilates.html">  <button href="pilates.html" class="btn">Group Exercise classes</button></a>
@@ -518,14 +531,11 @@
             </div>                
             </div>
             </div>
-   <a href="#classes" class="btn btn-circle js-scroll-trigger" >
-                <i class="fa fa-angle-double-down animated"></i>
-                </a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section content-section  text-center">
+    <section id="about" class="about-section  text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto about">
@@ -536,10 +546,8 @@
       </div>
     </section>
 
-    
-
     <!-- Contact Section -->
-    <section id="contact" class="contact-section content-section text-center">
+    <section id="contact" class="contact-section text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -565,10 +573,35 @@
   
 
     <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; The Fitness Club 2018</p>
-      </div>
+    <footer >
+        <div id="footer">
+            <div style="display:inline">
+                <a href="index.php#facilities">Facilities</a><br>
+                <a href="index.php#classes">Classes</a><br>
+                <a href="index.php#shop">Shop</a><br>
+            </div>
+            <div style="display:inline">
+                <a href="index.php#aboutus">About us</a><br>
+                <a href="index.php#contactus">Contact us</a><br>
+                <div id="social">
+                    <a href="" class="fa fa-facebook"></a>
+                    <a href="" class="fa fa-twitter"></a>
+                    <a href="" class="fa fa-instagram"></a>	
+			     </div>
+            </div> 
+            <div style="display:inline">
+                <a href="index.php#page-top">Login</a><br>
+                <a href="index.php#page-top">Register</a><br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container text-center">
+            <img src="images/logo.png" style="width:200px;height:50px;">
+            <br>
+            <br>
+            <p>&copy; The Fitness Club 2018</p>
+        </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
