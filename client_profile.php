@@ -53,7 +53,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">The Fitness Club</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/logo.png" style="width:300px;height:100px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -80,6 +80,7 @@
             </li>
           </ul>
         </div>
+          <a href="edit_profile"><img src="images/avatar.png"style="width:50px;height:50px;"></a>
       </div>
     </nav>
 

@@ -423,7 +423,7 @@
                 <h6>Zumba</h6>
               <img src="images/zumba.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="zumba.html"><button href="zumba.html" class="btn">Zumba</button></a>
+                  <a href="classZumba.php"><button href="classZumba.php" class="btn">Zumba</button></a>
               </div>
             </div>
              
@@ -431,7 +431,7 @@
                 <h6>Power Yoga</h6>
               <img src="images/yoga.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="yoga.html"> <button href="yoga.html" class="btn">Power Yoga</button></a>
+                  <a href="classYoga.php"> <button href="classYoga.php" class="btn">Power Yoga</button></a>
               </div>
             </div>
              
