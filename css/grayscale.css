@@ -3,6 +3,26 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+#schedule{
+    column-count: 3;
+    column-gap: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#schedule div{
+    padding: 10%;
+    text-align: center;
+    width: 350px;
+    height:200px;
+}
+.groups{
+    background-color: rgba(250,250,250,0.3);
+    color: black;
+}
+.groups1{
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+}
 #footer{
     column-count: 3;
     column-gap: 0px;
@@ -179,7 +199,11 @@
     background-color: rgb(218,32,62);
     color:black;
 }
-#logbutton:hover,#join:hover{
+#logbutton:hover{
+    background-color: white;
+    color: black;
+}
+#join:hover{
     background-color: rgb(218,32,62);
     color:black;
 }
@@ -308,62 +332,63 @@ a {
     color: #1d9b6c; 
 }
 #mainNav {
+    position: fixed;
     overflow: hidden;
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color:  rgba(24,24,24,0.3);
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  margin-bottom: 0 !important;
+  text-transform: uppercase !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background-color:  rgba(250,250,250,0.3) !important;
 }
   #mainNav .navbar-toggler {
-    font-size: 14px;
-    padding: 11px;
-    color: white;
-    border: 1px solid white; 
+    font-size: 14px !important;
+    padding: 11px !important;
+    color: white !important;
+    border: 1px solid white !important; 
 }
   #mainNav .navbar-brand {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
   #mainNav a {
-    color: white; 
+    color: white !important; 
 }
   #mainNav .navbar-nav .nav-item {
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out; 
+    -webkit-transition: background 0.3s ease-in-out !important;
+    -moz-transition: background 0.3s ease-in-out !important;
+    transition: background 0.3s ease-in-out !important; 
 }
     #mainNav .navbar-nav .nav-item:hover {
-      color: fade(white, 80%);
-      outline: none;
-      background-color: transparent;
+      color: fade(white, 80%) !important;
+      outline: none !important;
+      background-color: transparent !important;
 }
     #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
-      outline: none;
-      background-color: transparent;
+      outline: none !important;
+      background-color: transparent !important;
 }
   @media (min-width: 992px) {
     #mainNav {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-      -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-      transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-      letter-spacing: 1px;
-      border-bottom: none;
-    background-color:  rgba(250,250,250,0.3);
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+      -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s !important;
+      -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s !important;
+      transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s !important;
+      letter-spacing: 1px !important;
+      border-bottom: none !important;
+    background-color:  rgba(250,250,250,0.3) !important;
       }
       #mainNav.navbar-shrink {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background-color: rgb(77,77,77); 
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+        background-color: rgb(77,77,77) !important; 
       }
       #mainNav .nav-link.active {
-        outline: none;
-        background-color: rgba(218,32,62,0.3);
+        outline: none !important;
+        background-color: rgba(218,32,62,0.3) !important;
       }
         #mainNav .nav-link.active:hover {
-          color: rgb(8,15,43);
+          color: black !important;
       }
 }
 

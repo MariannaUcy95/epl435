@@ -1,0 +1,92 @@
+
+.mastheadZumba,.mastheadYoga {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: black;
+ background-color: #C0C0C0 !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+  .mastheadZumba .intro-body {
+padding-bottom: 150px;
+      padding-top: 150px;
+      display: table-cell;
+    vertical-align: middle; }
+    .masthead .intro-body .brand-heading {
+      font-size: 50px; 
+}
+ .mastheadYoga .intro-body {
+     padding-bottom: 150px;
+      padding-top: 150px;
+    display: table-cell;
+    vertical-align: middle; }
+    .masthead .intro-body .brand-heading {
+      font-size: 50px; 
+}
+    .mastheadZumba .intro-body .intro-text {
+      font-size: 18px; 
+}
+    .mastheadYoga .intro-body .intro-text {
+      font-size: 18px; 
+}
+  @media (min-width: 768px) {
+    .mastheadZumba {
+      height: 100%;
+      padding: 0;
+      }
+      .mastheadZumba .intro-body .brand-heading {
+        font-size: 100px; 
+      }
+      .mastheadZumba .intro-body .intro-text {
+        font-size: 22px; 
+      }
+}
+ @media (min-width: 768px) {
+    .mastheadYoga {
+      height: 100%;
+      padding: 0;
+      }
+      .mastheadYoga .intro-body .brand-heading {
+        font-size: 100px; 
+      }
+      .mastheadYoga .intro-body .intro-text {
+        font-size: 22px; 
+      }
+}
+/*
+h3{
+	color:black;
+	
+	font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+	}
+
+p{
+color:black;
+font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+border-color: black;
+}
+*/
+.yoga{
+	right:-10em;
+    height:700;
+    width:500px;
+    float:right;
+}
+
+/*
+h6 {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  font-size:18px;
+  text-transform: uppercase;
+  float:left;
+}
+*/

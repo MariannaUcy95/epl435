@@ -2,7 +2,6 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -58,16 +57,32 @@
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#classes"><i class="fa fa-calendar"></i> Classes</a>
+            <li class="dropdown">
+              <a class="nav-link js-scroll-trigger" href="#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="classZumba.php">Zumba</a>
+                        <a href="classYoga.php">Power Yoga</a>
+                        <a href="">Pilates</a>
+                        <a href="">Body Attack</a>
+                        <a href="">Circuit Training</a>
+                        <a href="">TRX</a>
+                    </div>
             </li>    
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities</a>
+            <li class="dropdown">
+              <a class="nav-link js-scroll-trigger" href="#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
+                 <div class="dropdown-content">
+                        <a href="facilities.php#main_workout_area">Main Workout Area</a>
+                        <a href="facilities.php#cardio_area">Cardio Area</a>
+                        <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
+                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
+                        <a href="facilities.php#personal_training">Personal Training</a>
+                        <a href="facilities.php#other_facilities">Other Facilities</a>
+                </div>
             </li>      
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#shop"><i class="material-icons" style="font-size:18px;">shopping_cart</i> Shop</a>
@@ -80,7 +95,14 @@
             </li>
           </ul>
         </div>
-          <a href="edit_profile"><img src="images/avatar.png"style="width:50px;height:50px;"></a>
+          <div class="dropdown">
+            <a href="edit_profile"><img src="images/avatar.png"style="width:50px;height:50px;"></a>
+              <div class="dropdown-content">
+                    <a></a>
+                    <a></a>
+                    <a></a>
+              </div>
+          </div>  
       </div>
     </nav>
 
@@ -564,12 +586,36 @@
     </section>
 
   
-
     <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; The Fitness Club 2018</p>
-      </div>
+    <footer >
+        <div id="footer">
+            <div style="display:inline">
+                <a href="index.php#facilities">Facilities</a><br>
+                <a href="index.php#classes">Classes</a><br>
+                <a href="index.php#shop">Shop</a><br>
+            </div>
+            <div style="display:inline">
+                <a href="index.php#aboutus">About us</a><br>
+                <a href="index.php#contactus">Contact us</a><br>
+                <div id="social">
+                    <a href="" class="fa fa-facebook"></a>
+                    <a href="" class="fa fa-twitter"></a>
+                    <a href="" class="fa fa-instagram"></a>	
+			     </div>
+            </div> 
+            <div style="display:inline">
+                <a href="index.php#page-top">Login</a><br>
+                <a href="index.php#page-top">Register</a><br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container text-center">
+            <img src="images/logo.png" style="width:200px;height:50px;">
+            <br>
+            <br>
+            <p>&copy; The Fitness Club 2018</p>
+        </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
