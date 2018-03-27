@@ -95,12 +95,15 @@
             </li>
           </ul>
         </div>
-          <div class="dropdown">
+          <div class="dropdown" style="float:right;">
             <a href="edit_profile"><img src="images/avatar.png"style="width:50px;height:50px;"></a>
+              <br>
+              <br>
               <div class="dropdown-content">
-                    <a></a>
-                    <a></a>
-                    <a></a>
+                    <a href="view_profile.php">View Profile</a>
+                    <a href="edit_profile.php">Edit Profile</a>
+                    <a href="request_gym_program.php">Request gym program</a>
+                    <a href="logout.php">Log out</a>
               </div>
           </div>  
       </div>
@@ -111,7 +114,7 @@
       <div class="intro-body">
         <div class="container" id='xx'>
           <div class="row">
-            <div id="form" class="col-lg-8 mx-auto" style="top:100px;right:-5em;">
+          <!--  <div id="form" class="col-lg-8 mx-auto" style="top:100px;right:-5em;">
               <div id='initial-form'>
                   <form method="post" action="login_client.php">
                   <br>
@@ -126,7 +129,7 @@
                 </form>
                   <center><a>New member?</a></center>
                   <center><input id="join" type="button"  onclick="document.getElementById('register-client').style.display='block'" value="Join us!"></center>
-                  <!-- Sign Up Modal -->
+                  <!-- Sign Up Modal 
 
                     <div id="register-client"  class="w3-modal "  href="https://www.w3schools.com/w3css/4/w3.css">
                         <div class="w3-modal-content w3-animate-zoom" style="max-width:600px">
@@ -414,6 +417,7 @@
             </div>
 
             </div>
+-->
           </div>
         </div>
                        
