@@ -34,7 +34,7 @@
    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/logo.png" style="width:300px;height:100px;"></a>
+          <a class="navbar-brand js-scroll-trigger" href="index.php#page-top"><img src="images/img_white.png" style="width:250px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -149,6 +149,7 @@
 	
 	<!-- Footer -->
     <footer >
+        <center>
         <div id="footer">
             <div style="display:inline">
                 <a href="index.php#facilities">Facilities</a><br>
@@ -169,10 +170,11 @@
                 <a href="index.php#page-top">Register</a><br>
             </div>
         </div>
+            </center>
         <br>
         <br>
         <div class="container text-center">
-            <img src="images/logo.png" style="width:200px;height:50px;">
+            <img src="images/img_black.png" style="width:200px;">
             <br>
             <br>
             <p>&copy; The Fitness Club 2018</p>

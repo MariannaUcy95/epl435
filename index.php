@@ -52,7 +52,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/logo.png" style="width:300px;height:100px;"></a>
+          <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/img_white.png" style="width:250px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -104,20 +104,51 @@
         <div class="container" id='xx'>
           <div class="row">
             <div id="form" class="col-lg-8 mx-auto" style="top:100px;right:-5em;">
-              <div id='initial-form'>
-                  <form method="post" action="login_client.php">
-                  <br>
-                  <br>
-                    <div class="login">
-                        <center><label>Username or Email</label></center> 
-                        <center><input placeholder="username or email" type="text" name="username" required style="background-color: #DA203E;color:black"></center>
-                         <center><label>Password</label></center>
-                         <center> <input placeholder="password" type="password" name="password" style="background-color: #DA203E;color:black" required  ></center><br>
-                         <center><input id="logbutton" type="submit" value="Login"></center><br>
-                    </div>  
-                </form>
-                  <center><a>New member?</a></center>
-                  <center><input id="join" type="button"  onclick="document.getElementById('register-client').style.display='block'" value="Join us!"></center>
+                  <center>
+                  <div class="container" style="padding-bottom:5%;">
+                    <div class="omb_login" id="homepage-form">
+                        <h3 class="omb_authTitle">Login or <a href="#register-client" onclick="document.getElementById('register-client').style.display='block'" value="Join us!">Join us</a></h3>
+                        <div class="row omb_row-sm-offset-3 omb_socialButtons" style="text-align:center;display:inline">
+            
+                                <button href="#" class="btn btn-default" >
+                                    <i class="fa fa-facebook visible-xs"></i> Facebook
+                                </button>                        
+                                <button href="#" class="btn btn-default">
+                                    <i class="fa fa-google-plus visible-xs"></i>
+                                    Google+ 
+                                </button>
+                     
+                        </div>
+                        <center>
+                            <br>
+                        </center>
+                        <div class="row omb_row-sm-offset-3">
+                            <div class="col-xs-12 col-sm-6">	
+                                <form class="omb_loginForm" action="login_client.php" autocomplete="off" method="POST">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" name="username" placeholder="email address">
+                                    </div>
+                                    <br>
+                                    <span class="help-block"></span>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                        <input  type="password" class="form-control" name="password" placeholder="Password">
+                                    </div>
+                                    <br>
+                                    <button  class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                                    <br>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row omb_row-sm-offset-3" style="text-align:center;display:inline">
+                                <input type="checkbox" value="remember-me">Remember Me
+                            <a href="#">Forgot password?</a>  
+                        </div>	    	
+                    </div>
+                </div>
+                  </center>
                   <!-- Sign Up Modal -->
 
                     <div id="register-client"  class="w3-modal "  href="https://www.w3schools.com/w3css/4/w3.css">
@@ -404,8 +435,6 @@
                         </div>
                     </div>
             </div>
-
-            </div>
           </div>
         </div>
                        
@@ -482,7 +511,7 @@
                 <h6>Main workout area</h6>
               <img src="images/mainworkoutarea.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="zumba.html"><button href="zumba.html" class="btn">Main workout area</button></a>
+                  <a href="facilities.php#main_workout_area"><button href="facilities.php#main_workout_area" class="btn">Main workout area</button></a>
               </div>
             </div>
              
@@ -490,7 +519,7 @@
                 <h6>Cardio area</h6>
               <img src="images/cardioarea.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="yoga.html"> <button href="yoga.html" class="btn">Cardio area</button></a>
+                  <a href="facilities.php#cardio_area"> <button href="facilities.php#cardio_area" class="btn">Cardio area</button></a>
               </div>
             </div>
              
@@ -498,7 +527,7 @@
             <h6>Group exercise classes</h6>
                 <img src="images/groupexerciseclasses.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="pilates.html">  <button href="pilates.html" class="btn">Group Exercise classes</button></a>
+                  <a href="facilities.php#group_exercise_classes">  <button href="facilities.php#group_exercise_classes" class="btn">Group Exercise classes</button></a>
               </div>
             </div>
             </div>
@@ -510,7 +539,7 @@
               <h6>Sports Facilities</h6>
                     <img src="images/sportsfacilities.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="bodyattack.html"> <button href="bodyattack.html" class="btn">Sports Facilities</button></a>
+                  <a href="facilities.php#sports_facilities"> <button href="facilities.php#sports_facilities" class="btn">Sports Facilities</button></a>
               </div>
              </div> 
             
@@ -518,14 +547,14 @@
             <h6>Personal training</h6>
               <img src="images/personaltraining.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="circuit.html"> <button href="circuit.html" class="btn">Personal training</button></a>
+                  <a href="facilities.php#personal_training"> <button href="facilities.php#personal_training" class="btn">Personal training</button></a>
               </div>
             </div>    
             <div class="container">
-                <h6>Other Services</h6>
+                <h6>Other Facilities</h6>
               <img src="images/otherfacilities.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="trx.html"> <button href="trx.html" class="btn">Other Services</button></a>
+                  <a href="facilities.php#other_facilities"> <button href="facilities.php#other_facilities" class="btn">Other Services</button></a>
               </div>
             </div>                
             </div>
@@ -573,7 +602,7 @@
 
     <!-- Footer -->
     <footer >
-        <div id="footer">
+        <center><div id="footer">
             <div style="display:inline">
                 <a href="index.php#facilities">Facilities</a><br>
                 <a href="index.php#classes">Classes</a><br>
@@ -593,10 +622,11 @@
                 <a href="index.php#page-top">Register</a><br>
             </div>
         </div>
+        </center>    
         <br>
         <br>
         <div class="container text-center">
-            <img src="images/logo.png" style="width:200px;height:50px;">
+            <img src="images/img_black.png" style="width:200px;">
             <br>
             <br>
             <p>&copy; The Fitness Club 2018</p>
