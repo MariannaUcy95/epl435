@@ -513,7 +513,9 @@ background-image:url("../images/intro.jpg") !important;
     height: 350px;
     }
 }
-
+#classes button,#facilities button{
+    background-color: rgb(218,32,62);
+}
 .btn {
  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   font-weight: 400;

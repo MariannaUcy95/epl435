@@ -499,7 +499,7 @@
         </div>
     </section>
       
-   <section id="facilities" class="content-section text-center">
+   <section id="facilities" class="content-section text-center" style="background-color:#C0C0C0">
      <div class="container" id="roww">
         <div >
             <h3>Facilities</h3>
