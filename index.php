@@ -83,10 +83,7 @@
                         <a href="facilities.php#personal_training">Personal Training</a>
                         <a href="facilities.php#other_facilities">Other Facilities</a>
                 </div>
-            </li>      
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#shop"><i class="material-icons" style="font-size:18px;">shopping_cart</i> Shop</a>
-            </li>       
+            </li>            
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-info"></i> About us</a>
             </li>    
@@ -127,17 +124,17 @@
                                 <form class="omb_loginForm" action="login_client.php" autocomplete="off" method="POST">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" name="username" placeholder="email address">
+                                        <input type="text" class="form-control" name="username" placeholder="email address" required>
                                     </div>
                                     <br>
                                     <span class="help-block"></span>
 
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                        <input  type="password" class="form-control" name="password" placeholder="Password">
+                                        <input  type="password" class="form-control" name="password" placeholder="Password" required>
                                     </div>
                                     <br>
-                                    <button  class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                                    <button  id ="loginbtn" class="btn btn-default" type="submit">Login</button>
                                     <br>
                                 </form>
                             </div>
@@ -570,6 +567,14 @@
             <h2>About The Fitness Club</h2>
             <p>The Fitness Club is a software designed within the course of <a href="https://www.cs.ucy.ac.cy/courses/EPL435/index.htm">EPL435-Human-Computer Interaction</a> of University of Cyprus. It is designed by <a href="https://www.linkedin.com/in/marianna-hatzidemetriou-65a714b1/">Marianna Hatzidemetriou</a>, Kwnstantina Tseriotou and Erasmia Shimitra.</p>
           </div>
+                <ul class="list-inline banner-social-buttons">
+               <li class="list-inline-item">
+                <a href="https://github.com/MariannaUcy95/epl435" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+            </ul>
         </div>
       </div>
     </section>
@@ -579,20 +584,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact</h2>
-            <p>Feel free to leave us a comment
-            <br>
-              <textarea name="Please leave us a comment"></textarea>
-              
-              </p>
-            <ul class="list-inline banner-social-buttons">
-               <li class="list-inline-item">
-                <a href="https://github.com/MariannaUcy95/epl435" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-            </ul>
+            <h2>Contact Us</h2>
+            <p>Do you have any questions or feedback for us? Feel free to leave us a comment here!</p>
+                <form id="contactus-form" action="" method="post"> 
+                    <label>Email </label><input type="email" id="email-comment" required><br>
+                    <label>Name </label><input type="text" id="name-comment"><br>
+                    <label>Subject </label><input type="text" id="subject-comment" required><br>
+                    <label style="padding-right:20px">Message </label><textarea name="Please leave us a comment" style="width:196px" required></textarea><br>
+                    <button class="btn btn-default">Submit</button>
+                </form>    
+          
           </div>
         </div>
       </div>
@@ -606,7 +607,6 @@
             <div style="display:inline">
                 <a href="index.php#facilities">Facilities</a><br>
                 <a href="index.php#classes">Classes</a><br>
-                <a href="index.php#shop">Shop</a><br>
             </div>
             <div style="display:inline">
                 <a href="index.php#aboutus">About us</a><br>
