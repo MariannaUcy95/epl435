@@ -147,8 +147,8 @@
                                     <div class="grid-container">
                                       <div class="grid-item"><label>Name</label></div>
                                       <div class="grid-item"><label>Surname</label></div>  
-                                      <div class="grid-item"><input type="text" name="name" placeholder="e.g. Maria" style="border-bottom: 4px solid #808080 !important;"></div>
-                                      <div class="grid-item"><input type="text"  style="border-bottom: 4px solid #808080 !important;" name="surname" placeholder="e.g. Georgiou"></div>
+                                      <div class="grid-item"><input type="text" name="name" placeholder="e.g. Maria" style="border-bottom: 2px solid #808080 !important;"></div>
+                                      <div class="grid-item"><input type="text"  style="border-bottom: 2px solid #808080 !important;" name="surname" placeholder="e.g. Georgiou"></div>
                                       <div class="grid-item"><label>Gender</label></div>   
                                       <div class="grid-item"><input type="radio" value="0"><label> Female </label><input type="radio" value="1"><label> Male </label><input type="radio" value="-1"><label> Other </label></div>
                                       <div class="grid-item"><label>Date of Birth</label></div>
@@ -157,13 +157,13 @@
                                       <div class="grid-item"><input type="tel" name="telephone"></div>
                                       <div class="grid-item"><label>Address</label></div>
                                       <div class="grid-item"><label>Postal Code</label></div>
-                                      <div class="grid-item"><input style="border-bottom: 4px solid #808080 !important;" placeholder="e.g. Leoforos Larnakos, Aglatzia" type="text" name="address"></div>
-                                      <div class="grid-item"><input  style="border-bottom: 4px solid #808080 !important;" placeholder="e.g. 1111" type="text" name="postalcode"></div>
+                                      <div class="grid-item"><input style="border-bottom: 2px solid #808080 !important;" placeholder="e.g. Leoforos Larnakos, Aglatzia" type="text" name="address"></div>
+                                      <div class="grid-item"><input  style="border-bottom: 2px solid #808080 !important;" placeholder="e.g. 1111" type="text" name="postalcode"></div>
                                       <div class="grid-item"><label>City</label></div>
                                       <div class="grid-item"><label>Country</label></div>
-                                      <div class="grid-item"><input type="text" style="border-bottom: 4px solid #808080 !important;"  name="city" placeholder="e.g. Nicosia"></div>
+                                      <div class="grid-item"><input type="text" style="border-bottom: 2px solid #808080 !important;"  name="city" placeholder="e.g. Nicosia"></div>
                                       <div class="grid-item">
-                                      <select name='country' class='dropdown'>
+                                      <select name='country' class='dropdown' style="color:black;padding: 1px 0px;">
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Albania">Albania</option>
                                         <option value="Algeria">Algeria</option>
@@ -407,13 +407,13 @@
                                         <div class="grid-item"><label>Email Address</label></div>
                                         <div class="grid-item"><input type="email" name="email" placeholder="thefitnessclub@mail.com"></div>
                                         <div class="grid-item"><label>Username</label></div>
-                                        <div class="grid-item"><input style="border-bottom: 4px solid #808080 !important;" type="text" name="username" placeholder="Maria95"></div>
+                                        <div class="grid-item"><input style="border-bottom: 2px solid #808080 !important;" type="text" name="username" placeholder="Maria95"></div>
                                         <div class="grid-item"><label>Password</label></div>
-                                        <div class="grid-item"><input type="password" style="border-bottom: 4px solid #808080 !important;color:black;" name="password" placeholder="......"></div>
+                                        <div class="grid-item"><input type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="password" placeholder="......"></div>
                                         <div class="grid-item"><label>Confirm Password</label></div>
-                                        <div class="grid-item"><input type="password" style="border-bottom: 4px solid #808080 !important;color:black;" name="confirm_pass" placeholder="...."></div>
+                                        <div class="grid-item"><input type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="confirm_pass" placeholder="...."></div>
                                     </div><br><br>
-                                    <center><input id="registerbtn" type="submit" value="Join us"></center>
+                                    <center><input classs="btn btn-default" id="registerbtn" type="submit" value="Join us"></center>
                                 </form>
                                 </pre>
                             </div>

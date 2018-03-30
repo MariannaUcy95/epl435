@@ -272,46 +272,50 @@ footer{
 }
 .grid-item select{
     width: 200px;
-    height: 35px;
     border: none;
-    border-bottom: 4px solid #808080 !important;
+    border-bottom: 2px solid #808080 !important;
 }
 .grid-item input[type=text]{
     width: 200px;
     height: 35px;
     background-color: white !important;
-    border-bottom: 4px solid #808080 !important;
+    border-bottom: 2px solid #808080 !important;
 }
 .grid-item input[type=email]{
     border: none;
         width: 200px;
     height: 35px;
     background-color: white !important;
-    border-bottom: 4px solid #808080 !important;
+    border-bottom: 2px solid #808080 !important;
 }
 .grid-item input[type=tel]{
     border: none;
         width: 200px;
     height: 35px;
     background-color: white !important;
-    border-bottom: 4px solid #808080 !important;
+    border-bottom: 2px solid #808080 !important;
 }
 .grid-item input[type=password]{
         width: 200px;
     height: 35px;
     background-color: white !important;
-    border-bottom: 4px solid #808080 !important;
+    border-bottom: 2px solid #808080 !important;
 }
 .grid-item input[type=date]{
     border: none;
         width: 200px;
     height: 35px;
     background-color: white !important;
-    border-bottom: 4px solid #808080 !important;
+    border-bottom: 2px solid #808080 !important;
 }
 #register-client{
     display: none;
     margin-top: 100px;
+}
+#register-client input{
+        border-top:none;
+        border-right:none;
+        border-left:none;
 }
 #register-client input[type=text]{
     width: 200px;
@@ -329,18 +333,18 @@ footer{
     border: none;
     border-radius: 4px;
 }
+
 #registerbtn{
     background-color: rgb(40,40,40);
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
     display: grid;
 }
 #registerbtn:hover{
-   
     color:black;
+     background-color: rgb(218,32,62);
 }
 #logbutton:hover{
     background-color: white;
@@ -391,43 +395,13 @@ footer{
 }
 
 ::placeholder {
-    color: white;
+    color:black;
     opacity: 0.3;
 }
 #xx{
     max-width: 100%;
 }
-/*#initial-form input[type=text] {
-    border: none !important;
-    border-bottom: 2px solid white !important;
-    border-radius: 2px;
-}
-#initial-form  input[type=password] {
-    color: white;
-    border: none !important;
-    border-bottom: 2px solid white !important;
-    border-radius: 2px;
-}
 
-#initial-form{
-    right:-10em;
-    height:350px;
-    width:300px;
-    float:right;
-    background-color:  #FAFAFA;
-}*/
-/*
-.login{
-    background-color:  rgb(218,32,62);
-    padding-top:1em;
-    width: 210px;
-    padding-left: 0px;
-    border-left-width: 50px;
-    margin-left: 40px;
-    margin-right: 30px;
-    height: 200px;
-    margin-top: 0px;
-}*/
 .row{
     display: block;
 }

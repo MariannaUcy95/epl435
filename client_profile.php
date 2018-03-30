@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/img_white.png" style="width:250px;"></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/img_white.png" style="width:200px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -42,7 +42,7 @@
               <a class="nav-link js-scroll-trigger" href="#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
              <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#tips"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
+              <a class="nav-link js-scroll-trigger" href="#tips"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tips&amp;Tricks</a>
             </li>    
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
@@ -112,7 +112,7 @@
         <div class="view">
           <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
             <ul class="animated fadeInUp col-md-12 list-unstyled list-inline" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
-                <li><div class="cont"><img src="images/gif.gif" width="100%;" style="margin-top:180px;margin-left:0%;margin-right:0%;"><a href="request_gym_program_page.php"><button class="btn btn-default" onclick="request_gym_program_page.php">Request Personal Gym program</button></a></div></li>
+                <li><div class="cont"><img src="images/gif.gif" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"><a href="request_gym_program_page.php"><button class="btn btn-default" onclick="request_gym_program_page.php">Request Personal Gym program</button></a></div></li>
             </ul>
           </div>
         </div>
@@ -126,7 +126,7 @@
         <div class="view">
           <div class="full-bg-img flex-center mask rgba-purple-light white-text">
             <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
-                <li><div class="cont"><img src="images/5.jpg" width="100%;" style="margin-top:180px;margin-left:0%;margin-right:0%;"><button class="btn btn-default">Tips &amp; Tricks</button></div></li>
+                <li><div class="cont"><img src="images/5.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"><button class="btn btn-default">Tips &amp; Tricks</button></div></li>
             </ul>
           </div>
         </div>
@@ -140,7 +140,7 @@
         <div class="view">
           <div class="full-bg-img flex-center mask rgba-blue-light white-text">
             <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
-                <li><div class="cont"><img src="images/abs.gif"  width="100%;" style="margin-top:180px;margin-left:0%;margin-right:0%;"><button class="btn btn-default">Register to a class</button></div></li>
+                <li><div class="cont"><img src="images/abs.gif"  width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"><button class="btn btn-default">Register to a class</button></div></li>
             </ul>
           </div>
         </div>
@@ -154,7 +154,7 @@
         <div class="view">
           <div class="full-bg-img flex-center mask rgba-blue-light white-text">
             <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
-                <li><div class="cont"><img src="images/4.jpg"  width="100%;" style="margin-top:180px;margin-left:0%;margin-right:0%;"><button class="btn btn-default">Find a Personal Trainer</button></div></li>
+                <li><div class="cont"><img src="images/4.jpg"  width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"><button class="btn btn-default">Find a Personal Trainer</button></div></li>
             </ul>
           </div>
         </div>
