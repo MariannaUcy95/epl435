@@ -113,8 +113,8 @@
                     <br>
                     <br>
                     <label>Heath Problems</label>
-                        <input type="radio"> Yes 
-                        <input type="radio"> No
+                        <input type="radio" name="healthproblems" value="Yes"> Yes 
+                        <input type="radio" name="healthproblems" value="No"> No
                         <br>
                     <label>Medical History</label><br>
                         <textarea></textarea><br>
