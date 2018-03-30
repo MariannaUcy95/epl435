@@ -116,28 +116,28 @@
                             <div id="grid">
                             <label>Name</label>        
                                 <?php
-                                echo '<input type="text" value='. $row['Name'].'>';
+                                echo '<input type="text" value="'. $row['Name'].'" readonly>';
                                 ?>
                             <label>Surname</label> 
                                <?php
-                                echo '<input type="text" value='. $row['Surname'].'>';
+                                echo '<input type="text" value="'. $row['Surname'].'" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>Gender</label>
                                   <?php
                                 if($row['Name']==0)
-                                    echo '<input type="text" value="Female">';
+                                    echo '<input type="text" value="Female" readonly>';
                                 else if ($row['Name']==1)
-                                    echo '<input type="text" value="Male">';
+                                    echo '<input type="text" value="Male" readonly>';
                                 else
-                                    echo '<input type="text" value="Other">';
+                                    echo '<input type="text" value="Other" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>Date of Birth</label>
                                  <?php
-                                echo '<input type="text" value='. $row['DateOfBirth'].'>';
+                                echo '<input type="text" value="'. $row['DateofBirth'].'" readonly>';
                                 ?>
                             </div>
                             <br>
@@ -146,31 +146,33 @@
                             <h3>Communication details</h3>
                             <label>Phone Number</label>
                                 <?php
-                                echo '<input type="text" value='. $row['Telephone'].'>';
+                                echo '<input type="text" value="'. $row['Telephone'].'" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>Address</label>
-                              <input type="text">
+                            <?php
+                                echo '<input type="text" value="'. $row['Address'].'" readonly>';
+                                ?>
                             <label>Postal Code</label>
                                <?php
-                                echo '<input type="text" value='. $row['Address'].'>';
+                                echo '<input type="text" value="'. $row['PostalCode'].'" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>City</label>
                                 <?php
-                                echo '<input type="text" value='. $row['City'].'>';
+                                echo '<input type="text" value="'. $row['City'].'" readonly>';
                                 ?>
                             <label>Country</label>
                                 <?php
-                                echo '<input type="text" value='. $row['Country'].'>';
+                                echo '<input type="text" value="'. $row['Country'].'" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>Email Address</label>
                                   <?php
-                                echo '<input type="text" value='. $row['Email'].'>';
+                                echo '<input type="text" value="'. $row['EmailAddress'].'" readonly>';
                                 ?>
                          </div>
                          <br>
@@ -178,13 +180,13 @@
                             <h3>Security Details</h3>
                             <label>Username</label>
                                   <?php
-                                echo '<input type="text" value='. $row['Username'].'>';
+                                echo '<input type="text" value="'. $row['Username'].'" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>Password</label>
                                    <?php
-                                echo '<input type="text" value='. $row['Password'].'>';
+                                echo '<input type="text" value="'. $row['Password'].'" readonly>';
                                 ?>
                           </div>
                          <br>
