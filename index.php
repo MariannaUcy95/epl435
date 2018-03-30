@@ -22,33 +22,13 @@
       <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
       <link href="css/grayscale.css" rel="stylesheet">
- 
-      <script>
-         function showErrorMessage() {
-            alert("You've successfully signed up!");
-        }
-        function showErrorMessage2() {
-            alert("Username already used!");
-        }
-      
-      </script>
+
   </head>
   <body id="page-top">
-   <?php
-	session_start();
-	if(isset($_SESSION['message'])) { ?>
-		<script type='text/javascript'>
-			showErrorMessage();
-		</script>
-		<?php 
-	}
-	if(isset($_SESSION['error2'])) { ?>
-		<script type='text/javascript'>
-			showErrorMessage2();
-		</script>
-		<?php 
-	}
+      <?php
+      		session_start();
       ?>
+    
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -104,7 +84,7 @@
                   <center>
                   <div class="container" style="padding-bottom:5%;">
                     <div class="omb_login" id="homepage-form">
-                        <h3 class="omb_authTitle">Login or <a href="#register-client" onclick="document.getElementById('register-client').style.display='block'" value="Join us!">Join us</a></h3>
+                        <h3 class="omb_authTitle">Login or <a href="#register-client" onclick="document.getElementById('register-client').style.display='block'" value="Join us!" style="text-decoration:underline">Join us</a></h3>
                         <div class="row omb_row-sm-offset-3 omb_socialButtons" style="text-align:center;display:inline">
             
                                 <button href="#" class="btn btn-default" >
@@ -134,14 +114,21 @@
                                         <input  type="password" class="form-control" name="password" placeholder="Password" required>
                                     </div>
                                     <br>
+                                    <?php
+								
+										if(isset($_SESSION['error'])) { 
+											echo '<p class="alert alert-danger" style="font-size:14px;"><i class="material-icons" style="font-size:20px;color:red">error</i>'.$_SESSION['error'].'</p>';
+											session_destroy();
+										}
+										?>	
                                     <button  id ="loginbtn" class="btn btn-default" type="submit">Login</button>
                                     <br>
                                 </form>
                             </div>
                         </div>
-                        <div class="row omb_row-sm-offset-3" style="text-align:center;display:inline">
-                                <input type="checkbox" value="remember-me">Remember Me
-                            <a href="#">Forgot password?</a>  
+                        <div class="row omb_row-sm-offset-3" style="text-align:center;display:inline;">
+                                <input type="checkbox" value="remember-me">Remember Me     
+                            <a href="#" style="padding-left:50px;">Forgot password?</a>  
                         </div>	    	
                     </div>
                 </div>
@@ -154,7 +141,7 @@
                                 <span onclick="document.getElementById('register-client').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
                                 <h3>Join us!</h3>
                             </div>
-                            <div class="w3-container" style="width: 500px">
+                            <div class="w3-container">
                                 <pre href="https://www.w3schools.com/w3css/4/w3.css">                    
                                 <form method="post" action="join_us.php" id="join-form" >
                                     <div class="grid-container">
@@ -175,7 +162,8 @@
                                       <div class="grid-item"><label>City</label></div>
                                       <div class="grid-item"><label>Country</label></div>
                                       <div class="grid-item"><input type="text" style="border-bottom: 4px solid #808080 !important;"  name="city" placeholder="e.g. Nicosia"></div>
-                                      <div class="grid-item"><select name='country' class='dropdown'>
+                                      <div class="grid-item">
+                                      <select name='country' class='dropdown'>
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Albania">Albania</option>
                                         <option value="Algeria">Algeria</option>

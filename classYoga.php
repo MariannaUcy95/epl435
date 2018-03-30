@@ -85,7 +85,7 @@
         <div class="container" id='xx'>
            <div id="form" class="col-lg-8 mx-auto">
              <center>
-                 <div id='yoga'>
+                 <div id='zumba' style="margin-top:70px;">
 			 <h3>Yoga</h3>
 			<p>
 			Yoga is a group of physical, mental, and spiritual practices 

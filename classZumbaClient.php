@@ -32,9 +32,9 @@
   <body id="page-top">
 
    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="index.php#page-top"><img src="images/img_white.png" style="width:250px;"></a>
+          <a class="navbar-brand js-scroll-trigger" href="client_profile.php#page-top"><img src="images/img_white.png" style="width:250px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -42,13 +42,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php#page-top"><i class="fa fa-home"></i> Home</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#pagetop"><i class="fa fa-home"></i> Home</a>
             </li>    
+                 <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#tips"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
+            </li>  
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="index.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="classZumba.php">Zumba</a>
-                        <a href="classYoga.php">Power Yoga</a>
+                        <a href="classZumbaClient.php">Zumba</a>
+                        <a href="classYogaClient.php">Power Yoga</a>
                         <a href="">Pilates</a>
                         <a href="">Body Attack</a>
                         <a href="">Circuit Training</a>
@@ -56,7 +59,7 @@
                     </div>
             </li>    
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="index.php#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
                         <a href="facilities.php#main_workout_area">Main Workout Area</a>
                         <a href="facilities.php#cardio_area">Cardio Area</a>
@@ -65,15 +68,12 @@
                         <a href="facilities.php#personal_training">Personal Training</a>
                         <a href="facilities.php#other_facilities">Other Facilities</a>
                 </div>
-            </li>      
+            </li>            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php#shop"><i class="material-icons" style="font-size:18px;">shopping_cart</i> Shop</a>
-            </li>       
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php#about"><i class="fa fa-info"></i> About us</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#about"><i class="fa fa-info"></i> About us</a>
             </li>    
                <li class="nav-item">
-                   <a class="nav-link js-scroll-trigger" href="index.php#contact"><i class="fa fa-phone"></i> Contact us</a>
+                   <a class="nav-link js-scroll-trigger" href="client_profile.php#contact"><i class="fa fa-phone"></i> Contact us</a>
             </li>
           </ul>
         </div>
@@ -137,12 +137,24 @@
 				Monday<br>
 				Thursday<br>
 				17:00-18:00<br>
+                 <br>
+                <button class="btn btn-default">Register</button>
               </div>
 			  <div class="groups1" >
                 <h6>Group 2</h6>
+                  	Monday<br>
+				Thursday<br>
+				17:00-18:00<br>
+                  <br>
+                     <button class="btn btn-default">Register</button>
                 </div>
 			 <div class="groups1" >
                 <h6>Group 3</h6>
+                 	Monday<br>
+				Thursday<br>
+				17:00-18:00<br>
+                 <br>
+                    <button class="btn btn-default">Register</button>
             </div>
          </div>
     </section>

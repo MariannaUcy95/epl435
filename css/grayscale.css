@@ -3,7 +3,111 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+.slidecontainer {
+    width: 100%;
+}
 
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    border-radius: 5px;
+    background: #181818;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #DA203E;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #DA203E;
+    cursor: pointer;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+#makeform:hover{
+        background-color: rgb(218,32,62);
+}
+#enter-details {
+    margin-left: 8em;
+    margin-right: 8em;
+    background-color: rgba(255,255,255,0.5);
+    padding: 2%;
+}
+#availability,#details-form,#requests-form,#personalgoal,#exercisepurpose,#bodyparts{
+    background-color: rgba(254,254,254,0.5);
+    padding: 2%;
+}
+#purpose,#emphasize{
+    margin-left: 40%;
+    margin-right: 30%;
+    text-align: left;
+}
+#payment{
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+
+#request_for_gym_program{
+    margin-top: 200px;
+    background-color: rgba(24,24,24,0.3);
+    color: black;
+}
+/*RESPONSIVE IMAGES*/
+body img{
+    width: 100%;
+    height: auto;
+}
+/*******************BUTTON ON IMAGES***********************************/
+/* Container needed to position the button. Adjust the width as needed */
+
+.cont .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+   background-color: rgb(40,40,40);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cont .btn:hover {
+    background-color: rgb(218,32,62);
+    color:black;
+    opacity: 1;
+}
+
+
+#facilities{
+    background-color:#C0C0C0;
+}
 #contactus-form{
     padding: 2%;
     text-align: center;
@@ -16,10 +120,7 @@
     width: 90px;
     height:30px;    
 }
-#facilities #myCarousel img{
-	width:  626px;
-	height: 417px;
-}
+
 #homepage-form{
     padding:2%;
     background-color: rgba(250,250,250,0.3) !important;
@@ -35,17 +136,29 @@ hr{
     margin-left: 100px;
     margin-right: 100px;
 }
+#schedule button{
+    background-color: #C0C0C0;
+    color:black;
+}
+#schedule button:hover{
+    background-color: #DA203E;
+    color: white;
+}
 #schedule div{
     padding: 10%;
     text-align: center;
     width: 350px;
-    height:200px;
+    height:250px;
 }
 .groups{
+    padding-bottom: 2%;
+    padding-top: 2%;
     background-color: rgba(250,250,250,0.3);
     color: black;
 }
 .groups1{
+     padding-bottom: 2%;
+    padding-top: 2%;
     background-color: rgba(24,24,24,0.8);
     color: white;
 }
@@ -197,6 +310,7 @@ footer{
 }
 #register-client{
     display: none;
+    margin-top: 100px;
 }
 #register-client input[type=text]{
     width: 200px;

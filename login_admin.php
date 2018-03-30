@@ -10,14 +10,14 @@
     $Username = $_POST['username'];
     $Password = $_POST['password'];
 
-    $sql =  "SELECT * FROM gymclient WHERE Username='$Username' AND Password='$Password'";
+    $sql =  "SELECT * FROM gymadmins WHERE Username='$Username' AND Password='$Password'";
     $result = mysqli_query($conn, $sql); 
-
+	
     if(!$row=mysqli_fetch_assoc($result)) {
         $_SESSION['error'] = "Your username or password is incorrect!";
-        header("Location: index.php");
+        header("Location: indexAdmin.php");
         mysqli_close($conn);
     } else {
-        header("Location: client_profile.php?id=".$row['Username']);
+        header("Location: gymAdmin_profile.php?id=".$row['Username']);
     }
 ?>

@@ -19,36 +19,15 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+  
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
       <link href="css/grayscale.css" rel="stylesheet">
     
-      <script>
-         function showErrorMessage() {
-            alert("You've successfully signed up!");
-        }
-        function showErrorMessage2() {
-            alert("Username already used!");
-        }
-      
-      </script>
   </head>
   <body id="page-top">
-   <?php
-	session_start();
-	if(isset($_SESSION['message'])) { ?>
-		<script type='text/javascript'>
-			showErrorMessage();
-		</script>
-		<?php 
-	}
-	if(isset($_SESSION['error2'])) { ?>
-		<script type='text/javascript'>
-			showErrorMessage2();
-		</script>
-		<?php 
-	}
-      ?>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -62,11 +41,14 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#tips"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
+            </li>    
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="classZumba.php">Zumba</a>
-                        <a href="classYoga.php">Power Yoga</a>
+                        <a href="classZumbaClient.php">Zumba</a>
+                        <a href="classYogaClient.php">Power Yoga</a>
                         <a href="">Pilates</a>
                         <a href="">Body Attack</a>
                         <a href="">Circuit Training</a>
@@ -83,10 +65,7 @@
                         <a href="facilities.php#personal_training">Personal Training</a>
                         <a href="facilities.php#other_facilities">Other Facilities</a>
                 </div>
-            </li>      
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#shop"><i class="material-icons" style="font-size:18px;">shopping_cart</i> Shop</a>
-            </li>       
+            </li>           
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-info"></i> About us</a>
             </li>    
@@ -102,7 +81,7 @@
               <div class="dropdown-content">
                     <a href="view_profile.php">View Profile</a>
                     <a href="edit_profile.php">Edit Profile</a>
-                    <a href="request_gym_program.php">Request gym program</a>
+                    <a href="request_gym_program_page.php">Request gym program</a>
                     <a href="logout.php">Log out</a>
               </div>
           </div>  
@@ -110,17 +89,103 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="masthead">
+    <header class="masthead" style="background-image:none !important;background-color:#C0C0C0;">
       <div class="intro-body">
-        <div class="container" id='xx'>
-          <div class="row">
-         
+        <div class="container" id='xx' style="padding-left:0px;padding-right:0px;">
+          <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1" data-slide-to="1" class=""></li>
+      <li data-target="#carousel-example-1" data-slide-to="2" class=""></li>
+    <li data-target="#carousel-example-1" data-slide-to="3" class=""></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled list-inline" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                <li><div class="cont"><img src="images/gif.gif" width="100%;" style="margin-top:180px;margin-left:0%;margin-right:0%;"><a href="request_gym_program_page.php"><button class="btn btn-default" onclick="request_gym_program_page.php">Request Personal Gym program</button></a></div></li>
+            </ul>
           </div>
         </div>
-                       
+        <!--/.Mask-->
+      </div>
+      <!--/.First slide-->
+
+      <!--Second slide -->
+      <div class="carousel-item">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center mask rgba-purple-light white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                <li><div class="cont"><img src="images/5.jpg" width="100%;" style="margin-top:180px;margin-left:0%;margin-right:0%;"><button class="btn btn-default">Tips &amp; Tricks</button></div></li>
+            </ul>
+          </div>
+        </div>
+        <!--/.Mask-->
+      </div>
+      <!--/.Second slide -->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center mask rgba-blue-light white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                <li><div class="cont"><img src="images/abs.gif"  width="100%;" style="margin-top:180px;margin-left:0%;margin-right:0%;"><button class="btn btn-default">Register to a class</button></div></li>
+            </ul>
+          </div>
+        </div>
+        <!--/.Mask-->
+      </div>
+        
+      <!--/.Fourth slide-->
+            <!--Third slide-->
+      <div class="carousel-item">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center mask rgba-blue-light white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                <li><div class="cont"><img src="images/4.jpg"  width="100%;" style="margin-top:180px;margin-left:0%;margin-right:0%;"><button class="btn btn-default">Find a Personal Trainer</button></div></li>
+            </ul>
+          </div>
+        </div>
+        <!--/.Mask-->
+      </div>
+      <!--/.Fourth slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+          </div>
       </div>    
     </header>
-
+<!--Tips Section--->      
+      <section id="tips" class="download-section content-section text-center" style="background-color:#FAFAFA">
+        <div class="container" id="roww">
+            <h3>Tips &amp; Tricks</h3>
+        </div>
+    </section>
+      
 <!-- Form Section -->
     <section id="classes" class="download-section content-section text-center">
       <div class="container" id="roww">
@@ -179,13 +244,11 @@
             </div>                
             </div>
             </div>
-   <a href="#classes" class="btn btn-circle js-scroll-trigger" >
-                <i class="fa fa-angle-double-down animated"></i>
-                </a>
         </div>
     </section>
-      
-   <section id="facilities" class="result-section content-section text-center">
+     
+
+   <section id="facilities" class="content-section text-center" style="background-color:#C0C0C0">
      <div class="container" id="roww">
         <div >
             <h3>Facilities</h3>
@@ -242,9 +305,6 @@
             </div>                
             </div>
             </div>
-   <a href="#classes" class="btn btn-circle js-scroll-trigger" >
-                <i class="fa fa-angle-double-down animated"></i>
-                </a>
         </div>
     </section>
 

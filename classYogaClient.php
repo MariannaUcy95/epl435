@@ -20,18 +20,17 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
     <!-- Custom styles for this template -->
-   	<link href="css/classes.css" rel="stylesheet">
     <link href="css/grayscale.min.css" rel="stylesheet">
     <link href="css/grayscale.css" rel="stylesheet">
+	<link href="css/classes.css" rel="stylesheet">
 
     
   </head>
 
   <body id="page-top">
 
-   <!-- Navigation -->
+	<!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
           <a class="navbar-brand js-scroll-trigger" href="index.php#page-top"><img src="images/img_white.png" style="width:250px;"></a>
@@ -42,13 +41,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php#page-top"><i class="fa fa-home"></i> Home</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#pagetop"><i class="fa fa-home"></i> Home</a>
             </li>    
+                 <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#tips"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
+            </li>  
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="index.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="classZumba.php">Zumba</a>
-                        <a href="classYoga.php">Power Yoga</a>
+                        <a href="classZumbaClient.php">Zumba</a>
+                        <a href="classYogaClient.php">Power Yoga</a>
                         <a href="">Pilates</a>
                         <a href="">Body Attack</a>
                         <a href="">Circuit Training</a>
@@ -56,7 +58,7 @@
                     </div>
             </li>    
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="index.php#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
                         <a href="facilities.php#main_workout_area">Main Workout Area</a>
                         <a href="facilities.php#cardio_area">Cardio Area</a>
@@ -65,15 +67,12 @@
                         <a href="facilities.php#personal_training">Personal Training</a>
                         <a href="facilities.php#other_facilities">Other Facilities</a>
                 </div>
-            </li>      
+            </li>            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php#shop"><i class="material-icons" style="font-size:18px;">shopping_cart</i> Shop</a>
-            </li>       
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php#about"><i class="fa fa-info"></i> About us</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#about"><i class="fa fa-info"></i> About us</a>
             </li>    
                <li class="nav-item">
-                   <a class="nav-link js-scroll-trigger" href="index.php#contact"><i class="fa fa-phone"></i> Contact us</a>
+                   <a class="nav-link js-scroll-trigger" href="client_profile.php#contact"><i class="fa fa-phone"></i> Contact us</a>
             </li>
           </ul>
         </div>
@@ -81,68 +80,82 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="mastheadZumba">
+    <header class="mastheadYoga">
     <div class="intro-body">
         <div class="container" id='xx'>
            <div id="form" class="col-lg-8 mx-auto">
-             <center> <div id='zumba' style="margin-top:70px;">
-			 <h3>Zumba</h3>
+             <center>
+                 <div id='zumba' style="margin-top:70px;">
+			 <h3>Yoga</h3>
 			<p>
-			Zumba is an exercise fitness program created by Colombian dancer and cyclist/choreographer Alberto "Beto" 
-			"Power Pedal" Perez during the 1990s. Zumba is a trademark owned by Zumba Fitness, LLC. 
-			The Brazilian pop singer Claudia Leitte has become the international ambassador to Zumba Fitness</p>
-			<img src="images/zumba.jpg" />
-                 <br>
-                 <br>
+			Yoga is a group of physical, mental, and spiritual practices 
+			or disciplines which originated in ancient India.Among the most well-known 
+			types of yoga are Hatha yoga and Rāja yoga.</p>
+			<img src="images/girlyoga.jpg" />
+                     <br>
+                     <br>
                  <center>  <a class="btn btn-default" href="#sched">See Schedule</a></center>
-
-      </div> </center>   
+             </div>
+               </center>   
 	  </div>
 	  </div>
         </div>
-        </header>
+    </header>
 	
 	<section id="section2" class="download-section content-section text-center">
-	      <center>
-              <div class="container" id="roww">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <img class="mySlides" src="images/zumba1.jpg" alt="yoga">
-                    <img class="mySlides" src="images/zumba2.jpg" alt="yoga">
-                    <img class="mySlides" src="images/zumba3.jpg" alt="yoga">
-	           </div>
-	           </div>
-        </center>
+	      <center><div class="container" id="roww">
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		
+		<img class="mySlides" src="images/girlyoga2.jpg" alt="yoga">
+		<img class="mySlides" src="images/girlyoga3.jpg" alt="yoga">
+		<img class="mySlides" src="images/girlyoga4.jpg" alt="yoga">
+		<img class="mySlides" src="images/girlyoga5.jpg" alt="yoga">
+	
+	</div>
+	</div></center>
 	</section>
-	<script> 
-        var slideIndex = 0;
-        carousel();
-        function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}
-        x[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 4000); // Change image every 2 seconds
+	<script> var slideIndex = 0;
+	carousel();
+	function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 4000); // Change image every 2 seconds
 	}
 	</script>
-  <!-- Schedule Section -->
-    <section id="sched" class="content-section text-center" style="background-image:url('./images/zumba_footer.jpg');width:100%;height:100%;">
-        <h3 style="background-color:rgba(24,24,24,0.8);margin-left:100px;margin-right:100px;">Schedule</h3>
-		<div id="schedule">
-             <div class="groups1" >
+	  <!-- Schedule Section -->
+    <section id="sched" class="content-section text-center" style="background-image:url('./images/yoga_footer.jpg');width:100%;height:100%;">
+    <h3 style="background-color:rgba(24,24,24,0.8);margin-left:100px;margin-right:100px;">Schedule</h3>
+		<div id="schedule" style="padding:0%">
+             <div class="groups1">
                 <h6>Group 1</h6>
 				Monday<br>
 				Thursday<br>
 				17:00-18:00<br>
+                 <br>
+                <button class="btn btn-default">Register</button>
               </div>
 			  <div class="groups1" >
                 <h6>Group 2</h6>
+                  	Monday<br>
+				Thursday<br>
+				17:00-18:00<br>
+                  <br>
+                     <button class="btn btn-default">Register</button>
                 </div>
-			 <div class="groups1" >
+			 <div class="groups1">
                 <h6>Group 3</h6>
+                 	Monday<br>
+				Thursday<br>
+				17:00-18:00<br>
+                 <br>
+                    <button class="btn btn-default">Register</button>
             </div>
          </div>
     </section>
