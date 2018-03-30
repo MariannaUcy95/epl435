@@ -29,10 +29,9 @@
       		session_start();
       ?>
     
-    <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/img_white.png" style="width:250px;"></a>
+        <a class="navbar-brand js-scroll-trigger" href="client_profile.php#page-top"><img src="images/img_white.png" style="width:200px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -40,10 +39,10 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#masthead"><i class="fa fa-home"></i> Home</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
              <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="client_profile.php#tips"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#tips"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tips&amp;Tricks</a>
             </li>    
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="client_profile.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
@@ -82,7 +81,7 @@
               <div class="dropdown-content">
                     <a href="view_profile.php">View Profile</a>
                     <a href="edit_profile.php">Edit Profile</a>
-                    <a href="request_gym_program.php">Request gym program</a>
+                    <a href="request_gym_program_page.php">Request gym program</a>
                     <a href="logout.php">Log out</a>
               </div>
           </div>  
@@ -100,7 +99,7 @@
              <div class="alert alert-success" id="payment">
                 <strong><i class="material-icons">announcement</i></strong> The program is made especially for you by a proffesional personal trainer!
                 </div>
-            <div id="enter-details">
+            <div id="enter-details" style="margin-bottom:30px;">
                 <h4>Physical Condition</h4>
                 <div id="details-form">
                     <div id="grid">

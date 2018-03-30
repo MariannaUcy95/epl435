@@ -96,99 +96,60 @@
                               <h3>My Profile</h3>
                           <div id="profilepic">
                             <h4>Profile Picture</h4>
-                              <?php
-                                    $conn = mysqli_connect("localhost", "root", "", "the fitness club");
-
-                                    if (!$conn) {
-                                        die("Connection failed: " . mysqli_connect_error());
-                                    }
-                                    $id=$_GET['id'];
-                                    $query="SELECT * FROM gymclient WHERE Username='$id'";
-                                    $result = mysqli_query($conn, $query); 
-                                    $row=mysqli_fetch_assoc($result); 
-                                        echo '<div style="background-color:white;width:100px;height:100px"><img src="'.$row['ProfileImage'].' style="width:100px;height:100px"></div>'
-                                    ?>
-                              
+                              <div style="background-color:white;width:100px;height:100px"><img src="images/avatar.png" style="width:100px;height:100px"></div>
                           </div>
                          <br>
                         <div id="details-form">
                             <h3>Personal Details</h3>
                             <div id="grid">
-                            <label>Name</label>        
-                                <?php
-                                echo '<input type="text" value='. $row['Name'].'>';
-                                ?>
+                            <label>Name</label>                
+                                <input type="text" required/>
                             <label>Surname</label> 
-                               <?php
-                                echo '<input type="text" value='. $row['Surname'].'>';
-                                ?>
+                                <input type="text" />
                             <br>
                             <br>
                             <label>Gender</label>
-                                  <?php
-                                if($row['Name']==0)
-                                    echo '<input type="text" value="Female">';
-                                else if ($row['Name']==1)
-                                    echo '<input type="text" value="Male">';
-                                else
-                                    echo '<input type="text" value="Other">';
-                                ?>
+                                <input type="text" required>  
                             <br>
                             <br>
                             <label>Date of Birth</label>
-                                 <?php
-                                echo '<input type="text" value='. $row['DateOfBirth'].'>';
-                                ?>
+                                <input type="text" required>
                             </div>
                             <br>
                          </div>
                         <div id="communication-det">
                             <h3>Communication details</h3>
                             <label>Phone Number</label>
-                                <?php
-                                echo '<input type="text" value='. $row['Telephone'].'>';
-                                ?>
+                              <input type="text" required>
                             <br>
                             <br>
                             <label>Address</label>
-                              <input type="text">
+                              <input type="text" required> 
                             <label>Postal Code</label>
-                               <?php
-                                echo '<input type="text" value='. $row['Address'].'>';
-                                ?>
+                              <input type="text" required>
                             <br>
                             <br>
                             <label>City</label>
-                                <?php
-                                echo '<input type="text" value='. $row['City'].'>';
-                                ?>
+                              <input type="text" required>
                             <label>Country</label>
-                                <?php
-                                echo '<input type="text" value='. $row['Country'].'>';
-                                ?>
+                              <input type="text" required>
                             <br>
                             <br>
                             <label>Email Address</label>
-                                  <?php
-                                echo '<input type="text" value='. $row['Email'].'>';
-                                ?>
+                                <input type="text" required>
                          </div>
                          <br>
                          <div id="logindet">
                             <h3>Security Details</h3>
                             <label>Username</label>
-                                  <?php
-                                echo '<input type="text" value='. $row['Username'].'>';
-                                ?>
+                                <input type="text" required>
                             <br>
                             <br>
                             <label>Password</label>
-                                   <?php
-                                echo '<input type="text" value='. $row['Password'].'>';
-                                ?>
+                                <input type="text" required>
                           </div>
                          <br>
-                          <a href=""><button id="editbtn" class="btn btn-default">EDIT</button></a>
+                          <a href=""><button id="editbtn" class="btn btn-default">UPDATE</button></a>
                     </div>  
                 </center>
                </div>

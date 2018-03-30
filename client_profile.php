@@ -79,10 +79,13 @@
               <br>
               <br>
               <div class="dropdown-content">
-                    <a href="view_profile.php">View Profile</a>
-                    <a href="edit_profile.php">Edit Profile</a>
-                    <a href="request_gym_program_page.php">Request gym program</a>
-                    <a href="logout.php">Log out</a>
+                <?php
+                    $id=$_GET['id'];
+                    echo '<a href="view_profile.php?id='.$id.'">View Profile</a>';
+                    echo '<a href="edit_profile.php?id='.$id.'">Edit Profile</a>';
+                    echo '<a href="request_gym_program_page.php?id='.$id.'">Request gym program</a>
+                   <a href="logout.php">Log out</a>';
+                  ?>
               </div>
           </div>  
       </div>

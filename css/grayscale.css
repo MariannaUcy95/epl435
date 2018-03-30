@@ -3,6 +3,10 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+#editbtn:hover{
+    background-color: #DA203E;
+    opacity: 1;
+}
 .slidecontainer {
     width: 100%;
 }
@@ -48,6 +52,7 @@
 }
 #makeform:hover{
         background-color: rgb(218,32,62);
+    opacity: 1;
 }
 #enter-details {
     margin-left: 8em;
@@ -55,7 +60,7 @@
     background-color: rgba(255,255,255,0.5);
     padding: 2%;
 }
-#availability,#details-form,#requests-form,#personalgoal,#exercisepurpose,#bodyparts{
+#availability,#details-form,#requests-form,#personalgoal,#exercisepurpose,#bodyparts,#profilepic,#communication-det,#logindet{
     background-color: rgba(254,254,254,0.5);
     padding: 2%;
 }
@@ -72,7 +77,6 @@
 
 #request_for_gym_program{
     margin-top: 200px;
-    background-color: rgba(24,24,24,0.3);
     color: black;
 }
 /*RESPONSIVE IMAGES*/
