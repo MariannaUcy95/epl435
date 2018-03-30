@@ -80,7 +80,7 @@
     <div class="intro-body">
         <div class="container" id='xx'>
            <div id="form" class="col-lg-8 mx-auto">
-             <center> <div id='facilities'>
+             <center> <div id='fac'>
 			 <h3>Facilities</h3>
       </div> </center>   
 	  </div>
@@ -90,7 +90,7 @@
 	
 <section id="main_workout_area" class="download-section content-section text-center">
               <div class="container" id="roww">
-			<center> <div id='facilities'>
+			<center> <div id='fac'>
 			<h3>Main Workout Area</h3>
 			<p>Most health clubs have a main workout area,
 			which primarily consists of free weights including 
@@ -127,7 +127,7 @@
 	</script>
 <section id="cardio_area" class="download-section content-section text-center">
               <div class="container" id="roww">
-			<center> <div id='facilities'>
+			<center> <div id='fac'>
 			<h3>Cardio area</h3>
 			<p>A cardio area includes many types of 
 			cardiovascular training-related equipment such as rowing 
@@ -165,7 +165,7 @@
 	
 	<section id="group_exercise_classes" class="download-section content-section text-center">
               <div class="container" id="roww">
-			<center> <div id='facilities'>
+			<center> <div id='fac'>
 			<h3>Group Exercise classes</h3>
 			<p>Most 2010-era health clubs offer group exercise classes that 
 			are conducted by certified fitness instructors or trainers. 
@@ -201,13 +201,13 @@
         setTimeout(carousel, 2000); // Change image every 2 seconds
 	}
 	</script>
-	<section id="sports_facilities" class="download-section content-section text-center">
+	<section id="sports_fac" class="download-section content-section text-center">
               <div class="container" id="roww">
-			<center> <div id='facilities'>
+			<center> <div id='fac'>
 			<h3>Sports</h3>
-			<p>Some health clubs offer sports facilities such as a 
+			<p>Some health clubs offer sports fac such as a 
 			swimming pools, squash courts, indoor running tracks, ice rinks, or boxing areas. 
-			In some cases, additional fees are charged for the use of these facilities.</p>
+			In some cases, additional fees are charged for the use of these fac.</p>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <img class="mySlides3" src="images/sportsfacilities.jpg" alt="sportsfacilities">
                     <img class="mySlides3" src="images/sportsfacilities2.jpg" alt="sportsfacilities">
@@ -235,7 +235,7 @@
 	</script>
 	<section id="personal_training" class="download-section content-section text-center">
               <div class="container" id="roww">
-			<center> <div id='facilities'>
+			<center> <div id='fac'>
 			<h3>Personal Training</h3>
 			<p>Most health clubs employ personal trainers who are accessible to members for training/fitness/nutrition/health advice and consultation.
 			Personal trainers can devise a customized fitness routine, sometimes including a nutrition plan, to help clients achieve their goals.
@@ -269,7 +269,7 @@
 	</script>
 	<section id="other_facilities" class="download-section content-section text-center">
               <div class="container" id="roww">
-			<center> <div id='facilities'>
+			<center> <div id='fac'>
 			<h3>Other Facilities</h3>
 			<p>Newer health clubs generally include health-shops selling equipment, snack bars, restaurants, 
 			child-care facilities, member lounges and cafes. Some clubs have a sauna, steam room,

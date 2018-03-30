@@ -571,7 +571,7 @@
     <section id="contact" class="contact-section text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-8 mx-auto" style="color:black">
             <h2>Contact Us</h2>
             <p>Do you have any questions or feedback for us? Feel free to leave us a comment here!</p>
                 <form id="contactus-form" action="" method="post"> 
