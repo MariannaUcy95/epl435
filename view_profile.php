@@ -190,7 +190,10 @@
                                 ?>
                           </div>
                          <br>
-                          <a href=""><button id="editbtn" class="btn btn-default">EDIT</button></a>
+                           <?php
+                            $id=$_GET['id'];
+                            echo '<a href="edit_profile.php?id='.$id.'"><button id="editbtn" class="btn btn-default">EDIT</button></a>';
+                            ?>
                     </div>  
                 </center>
                </div>
