@@ -66,9 +66,7 @@
                         <a href="facilities.php#other_facilities">Other Facilities</a>
                 </div>
             </li>      
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php#shop"><i class="material-icons" style="font-size:18px;">shopping_cart</i> Shop</a>
-            </li>       
+           
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="index.php#about"><i class="fa fa-info"></i> About us</a>
             </li>    

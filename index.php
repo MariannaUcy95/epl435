@@ -112,6 +112,7 @@
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                                         <input  type="password" class="form-control" name="password" placeholder="Password" required>
+                                        
                                     </div>
                                     <br>
                                     <?php
@@ -150,7 +151,7 @@
                                       <div class="grid-item"><input type="text" name="name" placeholder="e.g. Maria" style="border-bottom: 2px solid #808080 !important;"></div>
                                       <div class="grid-item"><input type="text"  style="border-bottom: 2px solid #808080 !important;" name="surname" placeholder="e.g. Georgiou"></div>
                                       <div class="grid-item"><label>Gender</label></div>   
-                                      <div class="grid-item"><input type="radio" value="0"><label> Female </label><input type="radio" value="1"><label> Male </label><input type="radio" value="-1"><label> Other </label></div>
+                                      <div class="grid-item"><input name="gender" type="radio" value="0"><label> Female </label><input  name="gender" type="radio" value="1"><label> Male </label><input name="gender" type="radio" value="-1"><label> Other </label></div>
                                       <div class="grid-item"><label>Date of Birth</label></div>
                                       <div class="grid-item"><input type="date" name="dateofbirth"></div>
                                       <div class="grid-item"><label>Telephone</label></div>
@@ -407,9 +408,11 @@
                                         <div class="grid-item"><label>Email Address</label></div>
                                         <div class="grid-item"><input type="email" name="email" placeholder="thefitnessclub@mail.com"></div>
                                         <div class="grid-item"><label>Username</label></div>
-                                        <div class="grid-item"><input style="border-bottom: 2px solid #808080 !important;" type="text" name="username" placeholder="Maria95"></div>
+                                        <div class="grid-item"><input  id="username" style="border-bottom: 2px solid #808080 !important;" type="text" name="username" placeholder="Maria95">
+                                        </div>
+                                        <span id="error"></span>
                                         <div class="grid-item"><label>Password</label></div>
-                                        <div class="grid-item"><input type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="password" placeholder="......"></div>
+                                        <div  id="pass" class="grid-item"><input  type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="password" placeholder="......"></div>
                                         <div class="grid-item"><label>Confirm Password</label></div>
                                         <div class="grid-item"><input type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="confirm_pass" placeholder="...."></div>
                                     </div><br><br>

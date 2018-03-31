@@ -77,6 +77,6 @@ if(!$row=mysqli_fetch_assoc($result)) {
 } else {
 	mysqli_close($conn);
 	$_SESSION['error2'] = "Username already used!";
-	//header("Location: index.php");
+   // header("Location: index.php#register-client");
 }
 ?>

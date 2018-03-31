@@ -82,12 +82,13 @@
               <div class="dropdown-content">
                     <a href="view_profile.php">View Profile</a>
                     <a href="edit_profile.php">Edit Profile</a>
-                    <a href="request_gym_program.php">Request gym program</a>
+                    <a href="request_gym_program_page.php">Request gym program</a>
                     <a href="logout.php">Log out</a>
               </div>
           </div>  
       </div>
     </nav>
+      
         <header class="masthead" >
            <div class="intro-body">
         <div id="readonly-form" style="margin-top:200px;color:black;margin-bottom:30px;">

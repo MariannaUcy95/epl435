@@ -79,11 +79,7 @@
     margin-top: 200px;
     color: black;
 }
-/*RESPONSIVE IMAGES*/
-body img{
-    width: 100%;
-    height: auto;
-}
+
 /*******************BUTTON ON IMAGES***********************************/
 /* Container needed to position the button. Adjust the width as needed */
 
@@ -100,7 +96,7 @@ body img{
     border: none;
     cursor: pointer;
     text-align: center;
-}
+}*?
 
 .cont .btn:hover {
     background-color: rgb(218,32,62);
