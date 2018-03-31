@@ -112,14 +112,14 @@
           <div class="container" id="roww" style="margin-top:0px;">
               <div>
             <div class="container"  style="column-count:3;column-gap:20px;">
-                <div class="container">
+                <div class="container">            
                     <div class="card" >
                     <div class="content">
                         <div class="front">
-                            Read More
+                            Fun Fact!
                         </div>
                         <div class="back">
-                            Content 
+                            <p style="padding-top:50%">"People who exercise outdoors burn more fat than those training inside."</p>
                         </div>
                     </div>
                     </div>
@@ -128,10 +128,10 @@
                     <div class="card" >
                     <div class="content">
                         <div class="front">
-                            Read More
+                            Partner workout!
                         </div>
                         <div class="back">
-                            Content 
+                            <p>You've heard it before: Some things are better together. Studies show working out with a partner has more benefits than hitting the weight rack or treadmill solo. Doing a workout with a friend, coworker etc can increase accountability, keep spirits high, and even spur better results....<a href="" style="color:black">Click here to read more</a> </p> 
                         </div>
                     </div>
                     </div>
@@ -140,10 +140,10 @@
                     <div class="card" >
                     <div class="content">
                         <div class="front">
-                            Read More
+                            How to:Become stronger!
                         </div>
                         <div class="back">
-                            Content 
+                            <p>Rome wasn't built in a day, but your body can become stronger in a month. Are you ready? Just about everyone has the desire to look good naked, but too often we focus on form over function. Muscles should have form and perform! If you want to look like Hercules and wrestle like him, this article is for you...</p>
                         </div>
                     </div>
                     </div>
@@ -154,10 +154,10 @@
                     <div class="card" >
                     <div class="content">
                         <div class="front">
-                            Read More
+                            Tips to Stay Motivated!
                         </div>
                         <div class="back">
-                            Content 
+                            <p>Have you ever started a fitness program and then quit? If you answered yes, you're not alone. Many people start fitness programs, but they may stop when they get bored, they don't enjoy it or results come too slowly. Here are seven tips to help you stay motivated.</p>
                         </div>
                     </div>
                     </div>
@@ -166,10 +166,10 @@
                     <div class="card" >
                     <div class="content">
                         <div class="front">
-                            Read More
+                            Famous Quote!
                         </div>
                         <div class="back">
-                            Content 
+                            <p style="padding-top:50%">"Bodybuilding is much like any other sport. To be successful, you must dedicate yourself 100% to your training, diet and mental approach. ~Arnold Schwarzenegger"</p>
                         </div>
                     </div>
                     </div>
@@ -178,10 +178,10 @@
                     <div class="card" >
                     <div class="content">
                         <div class="front">
-                            Read More
+                            Surprising Symptoms of Stress
                         </div>
                         <div class="back">
-                            Content 
+                            <p>Is your body giving you signs of anxiety? Here's how to know if you're stressed—and what you can do about it...</p>
                         </div>
                     </div>
                     </div>
@@ -192,7 +192,7 @@
                     <div class="card" >
                     <div class="content">
                         <div class="front">
-                            Read More
+                            Prepare for summer NOW!
                         </div>
                         <div class="back">
                             Content 
