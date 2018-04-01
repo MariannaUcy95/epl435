@@ -74,6 +74,18 @@
                <li class="nav-item">
                    <a class="nav-link js-scroll-trigger" href="client_profile.php#contact"><i class="fa fa-phone"></i> Contact us</a>
             </li>
+              <div class="dropdown" style="float:right;">
+            <a href="edit_profile"><img src="images/avatar.png"style="width:50px;height:50px;"></a>
+              <br>
+              <br>
+              <div class="dropdown-content">
+                    <a href="view_profile.php">View Profile</a>
+                    <a href="edit_profile.php">Edit Profile</a>
+                    <a href="request_gym_program_page.php">Request gym program</a>
+                  <a href="manage_program.php">Manage Daily Gym Program</a>
+                    <a href="logout.php">Log out</a>
+              </div>
+          </div> 
           </ul>
         </div>
       </div>

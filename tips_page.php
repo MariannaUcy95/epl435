@@ -48,8 +48,8 @@
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="classZumba.php">Zumba</a>
-                        <a href="classYoga.php">Power Yoga</a>
+                        <a href="classZumbaClient.php">Zumba</a>
+                        <a href="classYogaClient.php">Power Yoga</a>
                         <a href="">Pilates</a>
                         <a href="">Body Attack</a>
                         <a href="">Circuit Training</a>
@@ -68,10 +68,10 @@
                 </div>
             </li>            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-info"></i> About us</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#aboutus"><i class="fa fa-info"></i> About us</a>
             </li>    
             <li class="nav-item">
-                   <a class="nav-link js-scroll-trigger" href="#contact"><i class="fa fa-phone"></i> Contact us</a>
+                   <a class="nav-link js-scroll-trigger" href="client_profile.php#contact"><i class="fa fa-phone"></i> Contact us</a>
             </li>
             <li class="dropdown">
                <a class="nav-link js-scroll-trigger" href="edit_profile.php"><img src="images/avatar.png"style="width:50px;height:50px;"></a>

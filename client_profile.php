@@ -47,8 +47,8 @@
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="classZumba.php">Zumba</a>
-                        <a href="classYoga.php">Power Yoga</a>
+                        <a href="classZumbaClient.php">Zumba</a>
+                        <a href="classYogaClient.php">Power Yoga</a>
                         <a href="">Pilates</a>
                         <a href="">Body Attack</a>
                         <a href="">Circuit Training</a>
@@ -80,7 +80,7 @@
                     <a href="view_profile.php">View Profile</a>
                     <a href="edit_profile.php">Edit Profile</a>
                     <a href="request_gym_program_page.php">Request gym program</a>
-                    <a href="view_edit_program.php">Manage Daily Gym Program</a>
+                    <a href="manage_program.php">Manage Daily Gym Program</a>
                     <a href="logout.php">Log out</a>
                 </div>
             </li>

@@ -82,6 +82,7 @@
                     <a href="view_profile.php">View Profile</a>
                     <a href="edit_profile.php">Edit Profile</a>
                     <a href="request_gym_program_page.php">Request gym program</a>
+                  <a href="view_edit_program.php">Manage Daily Gym Program</a>
                     <a href="logout.php">Log out</a>
               </div>
           </div>  
