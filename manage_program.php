@@ -175,9 +175,15 @@
       virtual: {
         slides: (function () {
           var slides = [];
-          for (var i = 0; i < 10; i += 1) {
-            slides.push('Slide ' + (i + 1));
-          }
+         // for (var i = 0; i < 10; i += 1) {
+            var x=document.createElement("BUTTON");
+            x.innerHTML("Do something");
+            var y=document.getElementsByTagName("slides")[0];
+            slides.push(document.y.appendChild(x));
+            slides.push('alli malakia' + 2);
+              slides.push('werwtr' + 3);
+            slides.push('alli malakia' + 4);
+          //}
           return slides;
         }()),
       },
