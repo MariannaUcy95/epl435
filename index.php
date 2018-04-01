@@ -115,8 +115,7 @@
                                         
                                     </div>
                                     <br>
-                                    <?php
-								
+                                    <?php								
 										if(isset($_SESSION['error'])) { 
 											echo '<p class="alert alert-danger" style="font-size:14px;"><i class="material-icons" style="font-size:20px;color:red">error</i>'.$_SESSION['error'].'</p>';
 											session_destroy();
@@ -145,10 +144,7 @@
                             <div class="w3-container">
                                 <pre href="https://www.w3schools.com/w3css/4/w3.css">                    
                                 <form method="post" action="join_us.php" id="join-form" >
-                            
-                                        
-                             
-                                    <div class="grid-container">
+                                      <div class="grid-container">
                                         <div class="grid-item"> <label>Profile Photo</label></div>                                     
                                       <div class="grid-item"><input type="file" name="profilepic" accept="image/*"></div>
                                       <div class="grid-item"><label>Name</label></div>

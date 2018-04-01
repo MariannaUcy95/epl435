@@ -27,6 +27,9 @@
       <link href="css/tips.css" rel="stylesheet">
         <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
       <style>
   
     .swiper-container {
@@ -133,26 +136,32 @@
         </div>
       </div>
     </nav>
-      <div class="swiper-container">
-    <div class="swiper-wrapper"></div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+          <div class="swiper-container">
+        <div class="swiper-wrapper"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
   </div>
   <p class="append-buttons">
     <a href="#" class="slide-1">Slide 1</a>
-    <a href="#" class="slide-250">Slide 250</a>
-    <a href="#" class="slide-500">Slide 500</a>
+    <a href="#" class="slide-5">Slide 5</a>
+    <a href="#" class="slide-10">Slide 10</a>
   </p>
   <!-- Swiper JS -->
   <script src="swiper-master/dist/js/swiper.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
+      if ( document.documentElement.clientWidth	 >= 600) {      
+          $slides=3;
+        } 
+    else if ( document.documentElement.clientWidth<600){
+        $slides=1;     
+    }
+      var swiper = new Swiper('.swiper-container', {
+      slidesPerView: $slides,
       centeredSlides: true,
       spaceBetween: 30,
       pagination: {
@@ -166,7 +175,7 @@
       virtual: {
         slides: (function () {
           var slides = [];
-          for (var i = 0; i < 600; i += 1) {
+          for (var i = 0; i < 10; i += 1) {
             slides.push('Slide ' + (i + 1));
           }
           return slides;
@@ -177,13 +186,13 @@
       e.preventDefault();
       swiper.slideTo(0, 0);
     });
-    document.querySelector('.slide-250').addEventListener('click', function (e) {
+    document.querySelector('.slide-5').addEventListener('click', function (e) {
       e.preventDefault();
-      swiper.slideTo(249, 0);
+      swiper.slideTo(5, 0);
     });
-    document.querySelector('.slide-500').addEventListener('click', function (e) {
+    document.querySelector('.slide-10').addEventListener('click', function (e) {
       e.preventDefault();
-      swiper.slideTo(499, 0);
+      swiper.slideTo(10, 0);
     });
   </script>
       
