@@ -145,7 +145,12 @@
                             <div class="w3-container">
                                 <pre href="https://www.w3schools.com/w3css/4/w3.css">                    
                                 <form method="post" action="join_us.php" id="join-form" >
+                            
+                                        
+                             
                                     <div class="grid-container">
+                                        <div class="grid-item"> <label>Profile Photo</label></div>                                     
+                                      <div class="grid-item"><input type="file" name="profilepic" accept="image/*"></div>
                                       <div class="grid-item"><label>Name</label></div>
                                       <div class="grid-item"><label>Surname</label></div>  
                                       <div class="grid-item"><input type="text" name="name" placeholder="e.g. Maria" style="border-bottom: 2px solid #808080 !important;"></div>
@@ -410,7 +415,6 @@
                                         <div class="grid-item"><label>Username</label></div>
                                         <div class="grid-item"><input  id="username" style="border-bottom: 2px solid #808080 !important;" type="text" name="username" placeholder="Maria95">
                                         </div>
-                                        <span id="error"></span>
                                         <div class="grid-item"><label>Password</label></div>
                                         <div  id="pass" class="grid-item"><input  type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="password" placeholder="......"></div>
                                         <div class="grid-item"><label>Confirm Password</label></div>

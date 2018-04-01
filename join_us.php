@@ -68,9 +68,18 @@ $sql="SELECT * FROM gymclient WHERE Username='$username'";
 $result = mysqli_query($conn, $sql); 
 
 if(!$row=mysqli_fetch_assoc($result)) {
-    $sql2="INSERT INTO gymclient(Name,Surname,Gender,DateofBirth,Telephone,Address,PostalCode,City,Country,EmailAddress,Username,Password) VALUES ('$name','$surname','$gender','$date','$telephone','$address','$postalcode','$city','$country','$email','$username','$password')";
     
-    $result2 = mysqli_query($conn, $sql2); 
+    if(!isset($_POST['profilepic'])){
+        $sql2="INSERT INTO gymclient(Name,Surname,Gender,DateofBirth,Telephone,Address,PostalCode,City,Country,EmailAddress,Username,Password) VALUES ('$name','$surname','$gender','$date','$telephone','$address','$postalcode','$city','$country','$email','$username','$password')";
+    
+        $result2 = mysqli_query($conn, $sql2); 
+    }
+    else{
+        $pic=$_POST['profilepic'];
+        $sql3="INSERT INTO gymclient(ProfileImage,Name,Surname,Gender,DateofBirth,Telephone,Address,PostalCode,City,Country,EmailAddress,Username,Password) VALUES ('$pic','$name','$surname','$gender','$date','$telephone','$address','$postalcode','$city','$country','$email','$username','$password')";
+    
+        $result3 = mysqli_query($conn, $sql3); 
+    }
     mysqli_close($conn);
 	$_SESSION['message'] = "You've successfully signed up!";
 	header("Location: index.php");
