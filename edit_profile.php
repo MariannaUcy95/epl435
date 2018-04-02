@@ -46,7 +46,7 @@
               <a class="nav-link js-scroll-trigger" href="tips_page.php"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
             </li>    
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="client_profile.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
+              <a  href="client_profile.php#classes"><i class="fa fa-calendar" style="padding-top:5%;font-size:18px;"></i> Classes <i class="fa fa-caret-down"></i></a>
                     <div class="dropdown-content">
                         <a href="classZumbaClient.php">Zumba</a>
                         <a href="classYogaClient.php">Power Yoga</a>
@@ -57,7 +57,7 @@
                     </div>
             </li>    
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="client_profile.php#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
+              <a  href="client_profile.php#facilities"><i class="material-icons" style="padding-top:5%;font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
                         <a href="facilities1.php#main_workout_area">Main Workout Area</a>
                         <a href="facilities1.php#cardio_area">Cardio Area</a>
@@ -73,9 +73,7 @@
                <li class="nav-item">
                    <a class="nav-link js-scroll-trigger" href="client_profile.php#contact"><i class="fa fa-phone"></i> Contact us</a>
             </li>
-          </ul>
-        </div>
-          <div class="dropdown" style="float:right;">
+              <li class="dropdown" style="float:right;">
             <a href="edit_profile"><img src="images/avatar.png"style="width:50px;height:50px;border-radious:50%;"></a>
               <br>
               <br>
@@ -86,7 +84,10 @@
                   <a href="manage_program.php">Manage Daily Gym Program</a>
                     <a href="logout.php">Log out</a>
               </div>
-          </div>  
+          </li>
+          </ul>
+        </div>
+            
       </div>
     </nav>
         <header class="masthead" style="background-image:none!important;background-color:#4D4D4D !important;" >

@@ -39,7 +39,7 @@
               <a class="nav-link js-scroll-trigger" href="index.php#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="index.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
+              <a href="index.php#classes"><i class="fa fa-calendar" style="padding-top:5%;font-size:18px;"></i> Classes <i class="fa fa-caret-down"></i></a>
                     <div class="dropdown-content">
                         <a href="classZumba.php">Zumba</a>
                         <a href="classYoga.php">Power Yoga</a>
@@ -50,7 +50,7 @@
                     </div>
             </li>    
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="#page-top"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
+              <a  href="#page-top"><i class="material-icons" style="padding-top:5%;font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
                         <a href="facilities.php#main_workout_area">Main Workout Area</a>
                         <a href="facilities.php#cardio_area">Cardio Area</a>
