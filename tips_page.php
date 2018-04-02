@@ -32,7 +32,7 @@
      <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href=""><img src="images/img_black.png" style="width:200px;"></a>
+          <a class="navbar-brand js-scroll-trigger" href="client_profile.php#page-top"><img src="images/img_black.png" style="width:200px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -40,13 +40,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#page-top"><i class="fa fa-home"></i> Home</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
              <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="tips_page.php"><i class="material-icons">lightbulb_outline</i> Tips&amp;Tricks</a>
             </li> 
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
                     <div class="dropdown-content">
                         <a href="classZumbaClient.php">Zumba</a>
                         <a href="classYogaClient.php">Power Yoga</a>
@@ -57,14 +57,14 @@
                     </div>
             </li>    
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
-                        <a href="facilities.php#main_workout_area">Main Workout Area</a>
-                        <a href="facilities.php#cardio_area">Cardio Area</a>
-                        <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
-                        <a href="facilities.php#personal_training">Personal Training</a>
-                        <a href="facilities.php#other_facilities">Other Facilities</a>
+                        <a href="facilities1.php#main_workout_area">Main Workout Area</a>
+                        <a href="facilities1.php#cardio_area">Cardio Area</a>
+                        <a href="facilities1.php#group_exercise_classes">Group Exercise Classes</a>
+                        <a href="facilities1.php#sports_fac">Sports Facilities</a>
+                        <a href="facilities1.php#personal_training">Personal Training</a>
+                        <a href="facilities1.php#other_facilities">Other Facilities</a>
                 </div>
             </li>            
             <li class="nav-item">
@@ -81,7 +81,7 @@
                     <a href="view_profile.php">View Profile</a>
                     <a href="edit_profile.php">Edit Profile</a>
                     <a href="request_gym_program_page.php">Request gym program</a>
-                    <a href="view_edit_program.php">Manage Daily Gym Program</a>
+                    <a href="manage_program.php">Manage Daily Gym Program</a>
                     <a href="logout.php">Log out</a>
                 </div>
             </li>
@@ -233,25 +233,19 @@
         <center>
         <div id="footer">
             <div style="display:inline">
-                <a href="index.php#facilities">Facilities</a><br>
-                <a href="index.php#classes">Classes</a><br>
-                <a href="index.php#shop">Tips&amp;Tricks</a><br>
+                <a href="client_profile.php#facilities">Facilities</a><br>
+                <a href="client_profile.php#classes">Classes</a><br>
+                <a href="tips_page.php">Tips &amp; Tricks</a><br>
             </div>
             <div style="display:inline">
-                <a href="index.php#aboutus">About us</a><br>
-                <a href="index.php#contactus">Contact us</a><br>
+                <a href="client_profile.php#aboutus">About us</a><br>
+                <a href="client_profile.php#contact">Contact us</a><br>
                 <div id="social">
                     <a href="" class="fa fa-facebook"></a>
                     <a href="" class="fa fa-twitter"></a>
                     <a href="" class="fa fa-instagram"></a>	
 			     </div>
-            </div> 
-             <div style="display:inline">
-                <a href="">View Profile</a><br>
-                <a href="">Edit Profile</a><br>
-                <a href="">Request Gym Program</a><br>
-                 <a href="">Manage Daily Program</a>
-            </div> 
+            </div>
         </div>
         <br>
         <br>

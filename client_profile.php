@@ -58,12 +58,12 @@
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
-                        <a href="facilities.php#main_workout_area">Main Workout Area</a>
-                        <a href="facilities.php#cardio_area">Cardio Area</a>
-                        <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
-                        <a href="facilities.php#personal_training">Personal Training</a>
-                        <a href="facilities.php#other_facilities">Other Facilities</a>
+                        <a href="facilities1.php#main_workout_area">Main Workout Area</a>
+                        <a href="facilities1.php#cardio_area">Cardio Area</a>
+                        <a href="facilities1.php#group_exercise_classes">Group Exercise Classes</a>
+                        <a href="facilities1.php#sports_fac">Sports Facilities</a>
+                        <a href="facilities1.php#personal_training">Personal Training</a>
+                        <a href="facilities1.php#other_facilities">Other Facilities</a>
                 </div>
             </li>            
             <li class="nav-item">
@@ -193,7 +193,7 @@
                 <h6>Zumba</h6>
               <img src="images/zumba.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="zumba.html"><button href="zumba.html" class="btn">Zumba</button></a>
+                  <a href="classZumbaClient.php"><button href="zumba.html" class="btn">Zumba</button></a>
               </div>
             </div>
              
@@ -201,7 +201,7 @@
                 <h6>Power Yoga</h6>
               <img src="images/yoga.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="yoga.html"> <button href="yoga.html" class="btn">Power Yoga</button></a>
+                  <a href="classYogaClient.php"> <button href="yoga.html" class="btn">Power Yoga</button></a>
               </div>
             </div>
              
@@ -254,7 +254,7 @@
                 <h6>Main workout area</h6>
               <img src="images/mainworkoutarea.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="zumba.html"><button href="zumba.html" class="btn">Main workout area</button></a>
+                  <a href="facilities1.php#main_workout_area"><button href="zumba.html" class="btn">Main workout area</button></a>
               </div>
             </div>
              
@@ -262,15 +262,15 @@
                 <h6>Cardio area</h6>
               <img src="images/cardioarea.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="yoga.html"> <button href="yoga.html" class="btn">Cardio area</button></a>
+                  <a href="facilities1.php#cardio_area"> <button href="yoga.html" class="btn">Cardio area</button></a>
               </div>
             </div>
              
             <div class="container">
-            <h6>Group exercise clasees</h6>
+            <h6>Group exercise classes</h6>
                 <img src="images/groupexerciseclasses.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="pilates.html">  <button href="pilates.html" class="btn">Group Exercise classes</button></a>
+                  <a href="facilities1.php#group_exercise_classes">  <button href="pilates.html" class="btn">Group Exercise classes</button></a>
               </div>
             </div>
             </div>
@@ -282,7 +282,7 @@
               <h6>Sports Facilities</h6>
                     <img src="images/sportsfacilities.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="bodyattack.html"> <button href="bodyattack.html" class="btn">Sports Facilities</button></a>
+                  <a href="facilities1.php#sports_fac"> <button href="bodyattack.html" class="btn">Sports Facilities</button></a>
               </div>
              </div> 
             
@@ -290,14 +290,14 @@
             <h6>Personal training</h6>
               <img src="images/personaltraining.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="circuit.html"> <button href="circuit.html" class="btn">Personal training</button></a>
+                  <a href="facilities1.php#personal_training"> <button href="circuit.html" class="btn">Personal training</button></a>
               </div>
             </div>    
             <div class="container">
                 <h6>Other Services</h6>
               <img src="images/otherfacilities.jpg" class="image" style="width:100%">
               <div class="middle">
-                  <a href="trx.html"> <button href="trx.html" class="btn">Other Services</button></a>
+                  <a href="facilities1.php#other_facilities"> <button href="trx.html" class="btn">Other Services</button></a>
               </div>
             </div>                
             </div>
@@ -306,12 +306,13 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section content-section  text-center">
+    <section id="about" class="about-section  text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto about">
             <h2>About The Fitness Club</h2>
-            <p>The Fitness Club is a software designed within the course of <a href="https://www.cs.ucy.ac.cy/courses/EPL435/index.htm">EPL435-Human-Computer Interaction</a> of University of Cyprus. It is designed by <a href="https://www.linkedin.com/in/marianna-hatzidemetriou-65a714b1/">Marianna Hatzidemetriou</a>, Kwnstantina Tseriotou and Erasmia Shimitra.</p>
+            <p>"The Fitness Club" is not only a gym. It's your gym partner, it can help you become or keep fit, whether you like gym, weights, dancing (zumba), pilates, yoga or many more that our team can offer you.
+            We are located in the central Limassol, so you can reach us easily. We are open every day 7:00 to 21:00. Feel free to explore our website to learn more and if you still have questions, just contact us!</p>
           </div>
         </div>
       </div>
@@ -319,25 +320,19 @@
 
     
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section content-section text-center">
+ <!-- Contact Section -->
+    <section id="contact" class="contact-section text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact</h2>
-            <p>Feel free to leave us a comment
-            <br>
-              <textarea name="Please leave us a comment"></textarea>
-              
-              </p>
-            <ul class="list-inline banner-social-buttons">
-               <li class="list-inline-item">
-                <a href="https://github.com/MariannaUcy95/epl435" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-            </ul>
+          <div class="col-lg-8 mx-auto" style="color:black">
+            <h2>Contact Us</h2>
+            <p>Do you have any questions or feedback for us? Feel free to leave us a comment here!</p>
+                <form id="contactus-form" action="" method="post"> 
+                    <label>Subject </label><input type="text" id="subject-comment" required><br>
+                    <label style="padding-right:20px">Message </label><textarea name="Please leave us a comment" style="width:196px" required></textarea><br>
+                    <button class="btn btn-default">Submit</button>
+                </form>    
+          
           </div>
         </div>
       </div>
@@ -349,24 +344,18 @@
         <center>
         <div id="footer">
             <div style="display:inline">
-                <a href="index.php#facilities">Facilities</a><br>
-                <a href="index.php#classes">Classes</a><br>
-                <a href="index.php#shop">Tips&amp;Tricks</a><br>
+                <a href="#facilities">Facilities</a><br>
+                <a href="#classes">Classes</a><br>
+                <a href="tips_page.php">Tips&amp;Tricks</a><br>
             </div>
             <div style="display:inline">
-                <a href="index.php#aboutus">About us</a><br>
-                <a href="index.php#contactus">Contact us</a><br>
+                <a href="#aboutus">About us</a><br>
+                <a href="#contact">Contact us</a><br>
                 <div id="social">
                     <a href="" class="fa fa-facebook"></a>
                     <a href="" class="fa fa-twitter"></a>
                     <a href="" class="fa fa-instagram"></a>	
 			     </div>
-            </div> 
-             <div style="display:inline">
-                <a href="">View Profile</a><br>
-                <a href="">Edit Profile</a><br>
-                <a href="">Request Gym Program</a><br>
-                 <a href="">Manage Daily Program</a>
             </div> 
         </div>
         <br>

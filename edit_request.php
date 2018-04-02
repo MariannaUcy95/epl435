@@ -24,20 +24,32 @@
     <link href="css/grayscale.min.css" rel="stylesheet">
     <link href="css/grayscale.css" rel="stylesheet">
 	<link href="css/classes.css" rel="stylesheet">
-
+   <style>
+                        #reps{
+                            text-align: left;
+                        }
+       #reps input[type=number]{
+        float: right;
+       }
+                    </style>
     
   </head>
   
   
   <body id="page-top">
     <!-- Intro Header -->
-    <header class="masthead">
-       <div class="intro-body">
-           <div id="request_for_gym_program">
+    <header class="masthead" style="background-image:none!important;background-color:#4D4D4D !important;-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+        
+        <div class="intro-body">
+        <center><img src="images/img_white.png" style="width:250px;margin-top:5%"></center>
+            <div id="request_for_gym_program" style="margin-top:8%">
             <center>
-                <h3>Day 1</h3>
+                <h3 style="color:white">Day 1</h3>
 				<br>
-            <div id="enter-details" style="margin-left:10px;width:auto;height:auto;">
+            <div id="enter-details" style="margin-left:10%;width:auto;height:auto;">
 			<h4 style="text-align:left;">Aerobic/Cardio</h4>
 			<hr>
 		<div class="grid-container" style="display:grid; grid-template-columns: auto auto auto auto;">			
@@ -49,8 +61,10 @@
 					<img src="images/treadmill.jpg" alt="treadmill" style="height:150px;width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="duration">Duration</label>
 					<input style="width:50px;"type="number" value="20" id="duration">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -64,8 +78,10 @@
 					<img src="images/bicycle.jpg" alt="bicycle" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="duration">Duration</label>
 					<input style="width:50px;"type="number" value="20" id="duration">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -80,8 +96,10 @@
 					<img src="images/cardioarea3.png" alt="elliptical" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="duration">Duration</label>
 					<input style="width:50px;"type="number" value="20" id="duration">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -94,15 +112,17 @@
 					<img src="images/stepmill.jpg" alt="stepmill" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="duration">Duration</label>
 					<input style="width:50px;"type="number" value="20" id="duration">
+                    </div> 
 			</div>
 			</div>
 			</div>
 			</div>
 			<br>
 		</div>
-	       <h4 style="padding-top:50px; text-align:left;">Abs&ampCore</h4>
+	       <h4 style="padding-top:50px; text-align:left;">Abs &amp; Core</h4>
 			<hr>
 			<div class="grid-container" style="display:grid; grid-template-columns: auto auto auto auto;">			
 			<div class="grid-item">
@@ -113,10 +133,13 @@
 					<img src="images/planks.jpg" alt="planks" style="height:150px;width:180px;">
 					<br>
 					<br>
-					<label for="sets">Sets</label>
-					<input style="width:50px;"type="number" value="3" id="sets"><br>
-					<label for="repetition">Repetition</label>
-					<input style="width:50px;"type="number" value="10" id="repetition">
+                    <div id="reps">
+                        <label for="sets">Duration</label>
+                        <input style="width:50px;"type="number" value="15" id="sets"><br>
+                        <label for="repetition">Repetition</label>
+                        <input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
+                 
 			</div>
 			</div>
 			</div>
@@ -130,10 +153,12 @@
 					<img src="images/bicyclekicks.jpg" alt="bicyclekicks" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -148,10 +173,12 @@
 					<img src="images/abdominalcrunches.jpg" alt="abdominalcrunches" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -164,10 +191,12 @@
 					<img src="images/supermanexercise.jpg" alt="supermanexercise" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -175,7 +204,7 @@
 			<br>
 		</div>
 		
-           <h4 style="padding-top:50px; text-align:left;">Arms&ampShoulders</h4>
+           <h4 style="padding-top:50px; text-align:left;">Arms &amp; Shoulders</h4>
 			<hr>
 			<div class="grid-container" style="display:grid; grid-template-columns: auto auto auto auto;">			
 			<div class="grid-item">
@@ -186,10 +215,12 @@
 					<img src="images/latpulldown.jpg" alt="latpulldown" style="height:150px;width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -203,10 +234,12 @@
 					<img src="images/assistedpullup.jpg" alt="assistedpullup" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -221,10 +254,12 @@
 					<img src="images/row.jpg" alt="row" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -237,10 +272,12 @@
 					<img src="images/cablecurl.jpg" alt="cablecurl" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -248,7 +285,7 @@
 			<br>
 		</div>
 		
-		<h4 style="padding-top:50px; text-align:left;">Glutes&ampLegs</h4>
+		<h4 style="padding-top:50px; text-align:left;">Glutes &amp; Legs</h4>
 			<hr>
 			<div class="grid-container" style="display:grid; grid-template-columns: auto auto auto auto;">			
 			<div class="grid-item">
@@ -259,10 +296,12 @@
 					<img src="images/legspress.jpg" alt="legpress" style="height:150px;width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
@@ -276,16 +315,16 @@
 					<img src="images/legextension.jpg" alt="legextension" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
-			</div>
-			
-				
+			</div>		
 			<div class="grid-item">
 			<div id="absandcore">
 				<h6>Leg Curl</h6>
@@ -294,36 +333,41 @@
 					<img src="images/legcurl.jpg" alt="legcurl" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
 			</div>
-				<div class="grid-item">
-			<div id="aerobicardio">
+                <div class="grid-item">
+                    <div id="aerobicardio">
 				<h6>Squats</h6>
 				<div class="w3-card-4 w3-dark-grey" style="padding:5%;">
 				<div class="w3-container w3-center">
 					<img src="images/squats.jpg" alt="squats" style="height:150px; width:180px;">
 					<br>
 					<br>
+                     <div id="reps">
 					<label for="sets">Sets</label>
 					<input style="width:50px;"type="number" value="3" id="sets"><br>
 					<label for="repetition">Repetition</label>
 					<input style="width:50px;"type="number" value="10" id="repetition">
+                    </div>
 			</div>
 			</div>
 			</div>
 			</div>
 			<br>
 		</div>
-		
-			<div id="generalnotes">
+			<br>
+                <div id="generalnotes">
 				<div id="notes">
-                    <h4 style="padding-top:50px; text-align:left;">General Notes</h4>
+              <br>
+                    <h4 style="padding-top:10%; text-align:left;">General Notes</h4>
 					<hr>
                     <textarea name="requests" style=" float:left;height:60px;width:1000px;"></textarea><br>
                     </div>
@@ -335,7 +379,10 @@
             <button class="btn btn-default"  type="submit" id="makeform">Submit</button>
 			<button class="btn btn-default"  type="submit" id="makeform">Save as draft</button>
 			</div>
-		</div>
+               </center>
+               <br>
+           </div>
+        </div>
     </header>
 	
 	<!-- Footer -->
@@ -346,8 +393,8 @@
             <br>
             <br>
             <p>&copy; The Fitness Club 2018</p>
-			</center>
-        </div>
+		</div>
+        </center>
     </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

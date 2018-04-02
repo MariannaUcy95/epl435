@@ -24,7 +24,12 @@
     <link href="css/grayscale.min.css" rel="stylesheet">
     <link href="css/grayscale.css" rel="stylesheet">
 	<link href="css/classes.css" rel="stylesheet">
-
+      <script type="text/javascript">
+        function confirmation(){
+            confirm("Are you sure you want to register to this class?");
+        }
+      
+      </script>
     
   </head>
 
@@ -33,7 +38,7 @@
 	<!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="index.php#page-top"><img src="images/img_white.png" style="width:250px;"></a>
+          <a class="navbar-brand js-scroll-trigger" href="client_profile.php#page-top"><img src="images/img_white.png" style="width:250px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -41,10 +46,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="client_profile.php#pagetop"><i class="fa fa-home"></i> Home</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
                  <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#tips"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
+              <a class="nav-link js-scroll-trigger" href="tips_page.php"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
             </li>  
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="client_profile.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
@@ -60,12 +65,12 @@
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="client_profile.php#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
-                        <a href="facilities.php#main_workout_area">Main Workout Area</a>
-                        <a href="facilities.php#cardio_area">Cardio Area</a>
-                        <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
-                        <a href="facilities.php#personal_training">Personal Training</a>
-                        <a href="facilities.php#other_facilities">Other Facilities</a>
+                        <a href="facilities1.php#main_workout_area">Main Workout Area</a>
+                        <a href="facilities1.php#cardio_area">Cardio Area</a>
+                        <a href="facilities1.php#group_exercise_classes">Group Exercise Classes</a>
+                        <a href="facilities1.php#sports_fac">Sports Facilities</a>
+                        <a href="facilities1.php#personal_training">Personal Training</a>
+                        <a href="facilities1.php#other_facilities">Other Facilities</a>
                 </div>
             </li>            
             <li class="nav-item">
@@ -151,7 +156,7 @@
 				Thursday<br>
 				17:00-18:00<br>
                  <br>
-                <button class="btn btn-default">Register</button>
+                <button onclick="confirmation()" class="btn btn-default">Register</button>
               </div>
 			  <div class="groups1" >
                 <h6>Group 2</h6>
@@ -159,7 +164,7 @@
 				Thursday<br>
 				17:00-18:00<br>
                   <br>
-                     <button class="btn btn-default">Register</button>
+                     <button onclick="confirmation()"  class="btn btn-default">Register</button>
                 </div>
 			 <div class="groups1">
                 <h6>Group 3</h6>
@@ -167,7 +172,7 @@
 				Thursday<br>
 				17:00-18:00<br>
                  <br>
-                    <button class="btn btn-default">Register</button>
+                    <button onclick="confirmation()"  class="btn btn-default">Register</button>
             </div>
          </div>
     </section>
@@ -177,23 +182,19 @@
         <center>
         <div id="footer">
             <div style="display:inline">
-                <a href="index.php#facilities">Facilities</a><br>
-                <a href="index.php#classes">Classes</a><br>
-                <a href="index.php#shop">Shop</a><br>
+                <a href="client_profile.php#facilities">Facilities</a><br>
+                <a href="client_profile.php#classes">Classes</a><br>
+                <a href="tips_page.php">Tips &amp; Tricks</a>
             </div>
             <div style="display:inline">
-                <a href="index.php#aboutus">About us</a><br>
-                <a href="index.php#contactus">Contact us</a><br>
+                <a href="client_profile.php#aboutus">About us</a><br>
+                <a href="client_profile.php#contact">Contact us</a><br>
                 <div id="social">
                     <a href="" class="fa fa-facebook"></a>
                     <a href="" class="fa fa-twitter"></a>
                     <a href="" class="fa fa-instagram"></a>	
 			     </div>
             </div> 
-            <div style="display:inline">
-                <a href="index.php#page-top">Login</a><br>
-                <a href="index.php#page-top">Register</a><br>
-            </div>
         </div>
             </center>
         <br>

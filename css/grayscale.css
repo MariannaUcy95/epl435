@@ -3,6 +3,25 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+.program{
+    background-color: transparent;
+    border: none;
+}
+.error {color: #FF0000;}
+
+#main_workout_area img, #other_facilities img, #personal_training img, #sports_fac img, #cardio_area img, #group_exercise_classes img{
+    width: 1000px;
+    height: 500px;
+}
+hr{
+background-color: white !important;
+    font-size: 6px !important;
+}
+#groups:hover{
+    background-color: rgb(218,32,62) !important;
+    opacity: 1;
+    color:1;
+}
 #reply:hover,#edit:hover,#logout_admin:hover{
     background-color: rgb(218,32,62) !important;
     opacity: 1;
@@ -13,10 +32,6 @@
     border:none;
     background-color:transparent;
 }
-
-#list::selection{
-    border:none !important;
-}
 .mastheadkotsia {
   display: table;
   width: 100%;
@@ -24,7 +39,7 @@
   padding: 100px 0;
   text-align: center;
   color: white;
-    background-color: black;
+    background-color: #4D4D4D;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -42,7 +57,7 @@
 .requestsgym .item:hover{
 	background-color: rgba(218,32,62,0.5);
 	color: white;
-	font-size: 30px;	
+	font-size: 24px;	
 }
 .requestsgym .item:link{
 	background-color: rgba(218,32,62,0.5);
@@ -183,9 +198,6 @@
     padding:2%;
     background-color: rgba(250,250,250,0.3) !important;
     width: 600px;
-}
-hr{
-    color: white;
 }
 
 #schedule{

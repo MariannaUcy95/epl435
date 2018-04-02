@@ -60,14 +60,11 @@
                         <a href="facilities.php#main_workout_area">Main Workout Area</a>
                         <a href="facilities.php#cardio_area">Cardio Area</a>
                         <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
+                        <a href="facilities.php#sports_fac">Sports Facilities</a>
                         <a href="facilities.php#personal_training">Personal Training</a>
                         <a href="facilities.php#other_facilities">Other Facilities</a>
                 </div>
-            </li>      
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php#shop"><i class="material-icons" style="font-size:18px;">shopping_cart</i> Shop</a>
-            </li>       
+            </li>            
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="index.php#about"><i class="fa fa-info"></i> About us</a>
             </li>    
@@ -132,20 +129,31 @@
 	  <!-- Schedule Section -->
     <section id="sched" class="content-section text-center" style="background-image:url('./images/yoga_footer.jpg');width:100%;height:100%;">
     <h3 style="background-color:rgba(24,24,24,0.8);margin-left:100px;margin-right:100px;">Schedule</h3>
-		<div id="schedule">
-             <div class="groups1" >
+		<div id="schedule" style="padding:0%">
+             <div class="groups1">
                 <h6>Group 1</h6>
 				Monday<br>
 				Thursday<br>
 				17:00-18:00<br>
+                 <br>
               </div>
 			  <div class="groups1" >
                 <h6>Group 2</h6>
+                  	Monday<br>
+				Thursday<br>
+				17:00-18:00<br>
+                  <br>
                 </div>
-			 <div class="groups1" >
+			 <div class="groups1">
                 <h6>Group 3</h6>
+                 	Monday<br>
+				Thursday<br>
+				17:00-18:00<br>
+                 <br>  
             </div>
          </div>
+        <br>
+         <button id="groups" class="btn btn-default">Register to the gym</button>
     </section>
 	
 	<!-- Footer -->
@@ -155,11 +163,10 @@
             <div style="display:inline">
                 <a href="index.php#facilities">Facilities</a><br>
                 <a href="index.php#classes">Classes</a><br>
-                <a href="index.php#shop">Shop</a><br>
             </div>
             <div style="display:inline">
                 <a href="index.php#aboutus">About us</a><br>
-                <a href="index.php#contactus">Contact us</a><br>
+                <a href="index.php#contact">Contact us</a><br>
                 <div id="social">
                     <a href="" class="fa fa-facebook"></a>
                     <a href="" class="fa fa-twitter"></a>

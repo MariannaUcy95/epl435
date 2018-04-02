@@ -61,7 +61,7 @@
                         <a href="facilities.php#main_workout_area">Main Workout Area</a>
                         <a href="facilities.php#cardio_area">Cardio Area</a>
                         <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
+                        <a href="facilities.php#sports_fac">Sports Facilities</a>
                         <a href="facilities.php#personal_training">Personal Training</a>
                         <a href="facilities.php#other_facilities">Other Facilities</a>
                 </div>
@@ -135,14 +135,25 @@
 				Monday<br>
 				Thursday<br>
 				17:00-18:00<br>
+                 <br>
               </div>
 			  <div class="groups1" >
                 <h6>Group 2</h6>
-                </div>
+                  	Monday<br>
+				Thursday<br>
+				17:00-18:00<br>
+                  <br>
+            </div>
 			 <div class="groups1" >
                 <h6>Group 3</h6>
+                 	Monday<br>
+				Thursday<br>
+				17:00-18:00<br>
+                 <br>
             </div>
          </div>
+        <br>
+        <button  id="groups" class="btn btn-default">Register to the gym</button>
     </section>
 	
 	<!-- Footer -->
@@ -156,7 +167,7 @@
             </div>
             <div style="display:inline">
                 <a href="index.php#aboutus">About us</a><br>
-                <a href="index.php#contactus">Contact us</a><br>
+                <a href="index.php#contact">Contact us</a><br>
                 <div id="social">
                     <a href="" class="fa fa-facebook"></a>
                     <a href="" class="fa fa-twitter"></a>

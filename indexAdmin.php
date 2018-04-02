@@ -58,7 +58,7 @@
                                     </div>
 									<br>       
 										<?php
-										session_start();
+										
 										if(isset($_SESSION['error'])) { 
 											echo '<p class="alert alert-danger"><i class="material-icons" style="font-size:30px;color:red">error</i>'.$_SESSION['error'].'</p>';
 											session_destroy();
@@ -88,9 +88,6 @@
       </div>    
     </header>
 
-   
-          
-		
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

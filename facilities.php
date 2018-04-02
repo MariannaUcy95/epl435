@@ -55,13 +55,10 @@
                         <a href="facilities.php#main_workout_area">Main Workout Area</a>
                         <a href="facilities.php#cardio_area">Cardio Area</a>
                         <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
+                        <a href="facilities.php#sports_fac">Sports Facilities</a>
                         <a href="facilities.php#personal_training">Personal Training</a>
                         <a href="facilities.php#other_facilities">Other Facilities</a>
                 </div>
-            </li>      
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#shop"><i class="material-icons" style="font-size:18px;">shopping_cart</i> Shop</a>
             </li>       
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-info"></i> About us</a>
@@ -88,7 +85,7 @@
         </div>
         </header>
 	
-<section id="main_workout_area" class="download-section content-section text-center">
+<section id="main_workout_area" class="download-section content-section text-center" >
               <div class="container" id="roww">
 			<center> <div id='fac'>
 			<h3>Main Workout Area</h3>
@@ -100,32 +97,82 @@
 			This area often includes mirrors so that exercisers can monitor and maintain correct posture during their workout. 
 			A gym that predominantly or exclusively consists of free weights
 			as opposed to exercise machines, is sometimes referred to as a black-iron gym, after the traditional color of weight plates.</p>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <img class="mySlides" src="images/mainworkoutarea.jpg" alt="mainworkoutarea">
-                    <img class="mySlides" src="images/mainworkoutarea2.jpg" alt="mainworkoutarea">
-                    <img class="mySlides" src="images/mainworkoutarea3.jpg" alt="mainworkoutarea">
-	
-	           </div>
+                  <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-1" data-slide-to="1" class=""></li>
+              <li data-target="#carousel-example-1" data-slide-to="2" class=""></li>
+            </ol>
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+              <!--First slide-->
+              <div class="carousel-item active">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled list-inline" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/mainworkoutarea.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;">
+                            </div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.First slide-->
+
+              <!--Second slide -->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-purple-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/mainworkoutarea2.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.Second slide -->
+
+              <!--Third slide-->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-blue-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/mainworkoutarea3.jpg"  width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+
+            </div>
+            <!--/.Slides-->
+
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+  </div>
 	           </div>
         		</center>
     </div>
+    <hr>
 	</section>
-	<script> 
-        var slideIndex = 0;
-        carousel();
-        function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}
-        x[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
-	</script>
-<section id="cardio_area" class="download-section content-section text-center">
+
+<section id="cardio_area" class="download-section content-section text-center" style="padding:2%">
               <div class="container" id="roww">
 			<center> <div id='fac'>
 			<h3>Cardio area</h3>
@@ -135,35 +182,80 @@
 			These areas often include a number of audio-visual displays, often TVs,
 			in order to keep exercisers entertained during long cardio workout sessions. 
 			Some gyms provide newspapers and magazines for users of the cardio theatre to read while working out.</p>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <img class="mySlides1" src="images/cardioarea.jpg" alt="cardioarea">
-                    <img class="mySlides1" src="images/cardioarea2.jpg" alt="cardioarea">
-                    <img class="mySlides1" src="images/cardioarea3.png" alt="cardioarea">
-	
-	           </div>
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-2" data-slide-to="1" class=""></li>
+              <li data-target="#carousel-example-2" data-slide-to="2" class=""></li>
+            </ol>
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+              <!--First slide-->
+              <div class="carousel-item active">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled list-inline" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/cardioarea.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.First slide-->
+
+              <!--Second slide -->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-purple-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/cardioarea2.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.Second slide -->
+
+              <!--Third slide-->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-blue-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/cardioarea3.png"  width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+                </div>
+            </div>
+            <!--/.Slides-->
+
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+  </div>
 	           </div>
         		</center>
     </div>
-	</section>
-	<script> 
-        var slideIndex = 0;
-        carousel1();
-        function carousel1() {
-        var i;
-        var x = document.getElementsByClassName("mySlides1");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}
-        x[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
-	</script>
-	
-	
-	
-	<section id="group_exercise_classes" class="download-section content-section text-center">
+<hr>
+      </section>
+
+	<section id="group_exercise_classes" class="download-section content-section text-center" >
               <div class="container" id="roww">
 			<center> <div id='fac'>
 			<h3>Group Exercise classes</h3>
@@ -176,64 +268,160 @@
 			stretching, and self-defense classes such as Krav Maga and Brazilian jiu-jitsu.
 			Health clubs with swimming pools often offer aqua aerobics classes. 
 			The instructors often must gain certification in order to teach these classes and ensure participant safety.</p>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <img class="mySlides2" src="images/groupexerciseclasses.jpg" alt="groupexerciseclasses">
-                    <img class="mySlides2" src="images/groupexerciseclasses2.jpg" alt="groupexerciseclasses">
-                    <img class="mySlides2" src="images/groupexerciseclasses3.jpg" alt="groupexerciseclasses">
+                     <div id="carousel-example-3" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
 
-	           </div>
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-3" data-slide-to="1" class=""></li>
+              <li data-target="#carousel-example-3" data-slide-to="2" class=""></li>
+            </ol>
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+              <!--First slide-->
+              <div class="carousel-item active">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled list-inline" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/groupexerciseclasses.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.First slide-->
+
+              <!--Second slide -->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-purple-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/groupexerciseclasses2.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.Second slide -->
+
+              <!--Third slide-->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-blue-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/groupexerciseclasses3.jpg"  width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+                </div>
+            </div>
+            <!--/.Slides-->
+
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+  </div>
 	           </div>
         			</center>
         </div>
+        <hr>
 	</section>
-	<script> 
-        var slideIndex = 0;
-        carousel2();
-        function carousel2() {
-        var i;
-        var x = document.getElementsByClassName("mySlides2");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}
-        x[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
-	</script>
-	<section id="sports_fac" class="download-section content-section text-center">
+
+	<section id="sports_fac" class="download-section content-section text-center" style="padding:1%">
               <div class="container" id="roww">
 			<center> <div id='fac'>
 			<h3>Sports</h3>
 			<p>Some health clubs offer sports fac such as a 
 			swimming pools, squash courts, indoor running tracks, ice rinks, or boxing areas. 
 			In some cases, additional fees are charged for the use of these fac.</p>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <img class="mySlides3" src="images/sportsfacilities.jpg" alt="sportsfacilities">
-                    <img class="mySlides3" src="images/sportsfacilities2.jpg" alt="sportsfacilities">
-                    <img class="mySlides3" src="images/sportsfacilities3.jpg" alt="sportsfacilities">
+     <div id="carousel-example-4" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
 
-	           </div>
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-4" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-4" data-slide-to="1" class=""></li>
+              <li data-target="#carousel-example-4" data-slide-to="2" class=""></li>
+            </ol>
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+              <!--First slide-->
+              <div class="carousel-item active">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled list-inline" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/sportsfacilities.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.First slide-->
+
+              <!--Second slide -->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-purple-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/sportsfacilities2.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.Second slide -->
+
+              <!--Third slide-->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-blue-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/sportsfacilities3.jpg"  width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+                </div>
+            </div>
+            <!--/.Slides-->
+
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-4" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-4" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+  </div>
 	           </div>
                   </center>
         </div>
+        	<hr>
 	</section>
-	<script> 
-        var slideIndex = 0;
-        carousel3();
-        function carousel3() {
-        var i;
-        var x = document.getElementsByClassName("mySlides3");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}
-        x[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
-	</script>
-	<section id="personal_training" class="download-section content-section text-center">
+
+	<section id="personal_training" class="download-section content-section text-center" style="padding:10%">
               <div class="container" id="roww">
 			<center> <div id='fac'>
 			<h3>Personal Training</h3>
@@ -242,32 +430,80 @@
 			They can also monitor and train with members. 
 			More often than not, access to personal trainers involves an additional hourly fee.
 			</p>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <img class="mySlides4" src="images/personaltraining1.jpg" alt="personaltraining">
-                    <img class="mySlides4" src="images/personaltraining2.jpg" alt="personaltraining">
-                    <img class="mySlides4" src="images/personaltraining3.jpg" alt="personaltraining">
+                   <div id="carousel-example-5" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
 
-	           </div>
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-5" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-5" data-slide-to="1" class=""></li>
+              <li data-target="#carousel-example-5" data-slide-to="2" class=""></li>
+            </ol>
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+              <!--First slide-->
+              <div class="carousel-item active">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled list-inline" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/personaltraining3.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.First slide-->
+
+              <!--Second slide -->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-purple-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/personaltraining1.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.Second slide -->
+
+              <!--Third slide-->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-blue-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/personaltraining2.jpg"  width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+                </div>
+            </div>
+            <!--/.Slides-->
+
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-5" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-5" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+  </div>
 	           </div>
         			</center>
         </div>
+        <hr>
 	</section>
-	<script> 
-        var slideIndex = 0;
-        carousel4();
-        function carousel4() {
-        var i;
-        var x = document.getElementsByClassName("mySlides4");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}
-        x[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
-	</script>
-	<section id="other_facilities" class="download-section content-section text-center">
+
+	<section id="other_facilities" class="download-section content-section text-center" style="padding:2%">
               <div class="container" id="roww">
 			<center> <div id='fac'>
 			<h3>Other Facilities</h3>
@@ -277,31 +513,79 @@
 			Health clubs generally charge a fee to allow visitors to use the equipment, courses, and other provided services.
 			In the 2010s, some clubs have is eco-friendly health clubs which 
 			incorporate principles of "green living" in its fitness regimen, into the design of the centre or both.</p>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <img class="mySlides5" src="images/otherfacilities.jpg" alt="otherfacilities">
-                    <img class="mySlides5" src="images/otherfacilities2.jpg" alt="otherfacilities">
-                    <img class="mySlides5" src="images/otherfacilities3.jpg" alt="otherfacilities">
+                     <div id="carousel-example-6" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
 
-	           </div>
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-6" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-6" data-slide-to="1" class=""></li>
+              <li data-target="#carousel-example-6" data-slide-to="2" class=""></li>
+            </ol>
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+              <!--First slide-->
+              <div class="carousel-item active">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled list-inline" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/otherfacilities.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.First slide-->
+
+              <!--Second slide -->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-purple-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/saouna.jpg" width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+              </div>
+              <!--/.Second slide -->
+
+              <!--Third slide-->
+              <div class="carousel-item">
+                <!--Mask-->
+                <div class="view">
+                  <div class="full-bg-img flex-center mask rgba-blue-light white-text">
+                    <ul class="animated fadeInUp col-md-12 list-unstyled" style="padding-left:0px;padding-right:0px;padding-bottom:0px">
+                        <li><div class="cont"><img src="images/massage.jp.jpg"  width="100%;" style="margin-top:150px;margin-left:0%;margin-right:0%;"></div></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/.Mask-->
+                </div>
+            </div>
+            <!--/.Slides-->
+
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-6" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-6" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+  </div>
 	           </div>
         			</center>
         </div>
+
 	</section>
-	<script> 
-        var slideIndex = 0;
-        carousel5();
-        function carousel5() {
-        var i;
-        var x = document.getElementsByClassName("mySlides5");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}
-        x[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
-	</script>
+
 	
 	<!-- Footer -->
     <footer >
@@ -310,11 +594,10 @@
             <div style="display:inline">
                 <a href="index.php#facilities">Facilities</a><br>
                 <a href="index.php#classes">Classes</a><br>
-                <a href="index.php#shop">Shop</a><br>
             </div>
             <div style="display:inline">
                 <a href="index.php#aboutus">About us</a><br>
-                <a href="index.php#contactus">Contact us</a><br>
+                <a href="index.php#contact">Contact us</a><br>
                 <div id="social">
                     <a href="" class="fa fa-facebook"></a>
                     <a href="" class="fa fa-twitter"></a>

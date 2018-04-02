@@ -22,11 +22,23 @@
       <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
       <link href="css/grayscale.css" rel="stylesheet">
-
+      <script>
+        function error2(){
+            alert("Username already exist");
+        }
+      
+      </script>
+      
+      
   </head>
   <body id="page-top">
       <?php
       		session_start();
+      if(isset($_SESSION['error2']))
+      echo'<script>
+          function error2();
+    </script>';
+ 
       ?>
     
     <!-- Navigation -->
@@ -59,7 +71,7 @@
                         <a href="facilities.php#main_workout_area">Main Workout Area</a>
                         <a href="facilities.php#cardio_area">Cardio Area</a>
                         <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
+                        <a href="facilities.php#sports_fac">Sports Facilities</a>
                         <a href="facilities.php#personal_training">Personal Training</a>
                         <a href="facilities.php#other_facilities">Other Facilities</a>
                 </div>
@@ -144,26 +156,27 @@
                             <div class="w3-container">
                                 <pre href="https://www.w3schools.com/w3css/4/w3.css">                    
                                 <form method="post" action="join_us.php" id="join-form" >
+                                 <p><span class="error">* required field.</span></p>
                                       <div class="grid-container">
                                         <div class="grid-item"> <label>Profile Photo</label></div>                                     
                                       <div class="grid-item"><input type="file" name="profilepic" accept="image/*"></div>
-                                      <div class="grid-item"><label>Name</label></div>
-                                      <div class="grid-item"><label>Surname</label></div>  
-                                      <div class="grid-item"><input type="text" name="name" placeholder="e.g. Maria" style="border-bottom: 2px solid #808080 !important;"></div>
-                                      <div class="grid-item"><input type="text"  style="border-bottom: 2px solid #808080 !important;" name="surname" placeholder="e.g. Georgiou"></div>
+                                      <div class="grid-item"><label>Name</label><span class="error">*</span></div>
+                                      <div class="grid-item"><label>Surname</label><span class="error">*</span></div>  
+                                      <div class="grid-item"><input type="text" name="name" placeholder="e.g. Maria" style="border-bottom: 2px solid #808080 !important;" required></div>
+                                      <div class="grid-item"><input type="text"  style="border-bottom: 2px solid #808080 !important;" name="surname" placeholder="e.g. Georgiou" required></div>
                                       <div class="grid-item"><label>Gender</label></div>   
                                       <div class="grid-item"><input name="gender" type="radio" value="0"><label> Female </label><input  name="gender" type="radio" value="1"><label> Male </label><input name="gender" type="radio" value="-1"><label> Other </label></div>
-                                      <div class="grid-item"><label>Date of Birth</label></div>
-                                      <div class="grid-item"><input type="date" name="dateofbirth"></div>
-                                      <div class="grid-item"><label>Telephone</label></div>
-                                      <div class="grid-item"><input type="tel" name="telephone"></div>
-                                      <div class="grid-item"><label>Address</label></div>
-                                      <div class="grid-item"><label>Postal Code</label></div>
-                                      <div class="grid-item"><input style="border-bottom: 2px solid #808080 !important;" placeholder="e.g. Leoforos Larnakos, Aglatzia" type="text" name="address"></div>
-                                      <div class="grid-item"><input  style="border-bottom: 2px solid #808080 !important;" placeholder="e.g. 1111" type="text" name="postalcode"></div>
-                                      <div class="grid-item"><label>City</label></div>
-                                      <div class="grid-item"><label>Country</label></div>
-                                      <div class="grid-item"><input type="text" style="border-bottom: 2px solid #808080 !important;"  name="city" placeholder="e.g. Nicosia"></div>
+                                      <div class="grid-item"><label>Date of Birth</label><span class="error">*</span></div>
+                                      <div class="grid-item"><input type="date" name="dateofbirth" required></div>
+                                      <div class="grid-item"><label>Telephone</label><span class="error">*</span></div>
+                                      <div class="grid-item"><input type="tel" name="telephone" required></div>
+                                      <div class="grid-item"><label>Address</label><span class="error">*</span></div>
+                                      <div class="grid-item"><label>Postal Code</label><span class="error">*</span></div>
+                                      <div class="grid-item"><input style="border-bottom: 2px solid #808080 !important;" placeholder="e.g. Leoforos Larnakos, Aglatzia" type="text" name="address" required></div>
+                                      <div class="grid-item"><input  style="border-bottom: 2px solid #808080 !important;" placeholder="e.g. 1111" type="text" name="postalcode" required></div>
+                                      <div class="grid-item"><label>City</label><span class="error">*</span></div>
+                                      <div class="grid-item"><label>Country</label><span class="error">*</span></div>
+                                      <div class="grid-item"><input type="text" style="border-bottom: 2px solid #808080 !important;"  name="city" placeholder="e.g. Nicosia" required></div>
                                       <div class="grid-item">
                                       <select name='country' class='dropdown' style="color:black;padding: 1px 0px;">
                                         <option value="Afghanistan">Afghanistan</option>
@@ -406,17 +419,19 @@
                                         <option value="Zambia">Zambia</option>
                                         <option value="Zimbabwe">Zimbabwe</option>
                                     </select></div>
-                                        <div class="grid-item"><label>Email Address</label></div>
-                                        <div class="grid-item"><input type="email" name="email" placeholder="thefitnessclub@mail.com"></div>
-                                        <div class="grid-item"><label>Username</label></div>
-                                        <div class="grid-item"><input  id="username" style="border-bottom: 2px solid #808080 !important;" type="text" name="username" placeholder="Maria95">
+                                        <div class="grid-item"><label>Email Address</label><span class="error">*</span></div>
+                                        <div class="grid-item"><input type="email" name="email" placeholder="thefitnessclub@mail.com" required></div>
+                                        <div class="grid-item" ><label>Username</label><span class="error">*</span></div>
+                                        <div class="grid-item"><input  id="username" style="border-bottom: 2px solid #808080 !important;" type="text" name="username" placeholder="Maria95" required>
                                         </div>
-                                        <div class="grid-item"><label>Password</label></div>
-                                        <div  id="pass" class="grid-item"><input  type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="password" placeholder="......"></div>
-                                        <div class="grid-item"><label>Confirm Password</label></div>
-                                        <div class="grid-item"><input type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="confirm_pass" placeholder="...."></div>
+                                    
+                                        <div class="grid-item"><label>Password</label><span class="error">*</span></div>
+                                        <div  id="pass" class="grid-item"><input  type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="password" placeholder="......" required></div>
+                                        <div class="grid-item"><label>Confirm Password</label><span class="error">*</span></div>
+                                        <div class="grid-item"><input type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="confirm_pass" placeholder="...." required></div>
                                     </div><br><br>
-                                    <center><input classs="btn btn-default" id="registerbtn" type="submit" value="Join us"></center>
+                                    <center><input classs="btn btn-default" name="submit" id="registerbtn" type="submit" value="Join us"></center>
+                                    
                                 </form>
                                 </pre>
                             </div>
@@ -556,16 +571,9 @@
         <div class="row">
           <div class="col-lg-8 mx-auto about">
             <h2>About The Fitness Club</h2>
-            <p>The Fitness Club is a software designed within the course of <a href="https://www.cs.ucy.ac.cy/courses/EPL435/index.htm">EPL435-Human-Computer Interaction</a> of University of Cyprus. It is designed by <a href="https://www.linkedin.com/in/marianna-hatzidemetriou-65a714b1/">Marianna Hatzidemetriou</a>, Kwnstantina Tseriotou and Erasmia Shimitra.</p>
+            <p>"The Fitness Club" is not only a gym. It's your gym partner, it can help you become or keep fit, whether you like gym, weights, dancing (zumba), pilates, yoga or many more that our team can offer you.
+            We are located in the central Limassol, so you can reach us easily. We are open every day 7:00 to 21:00. Feel free to explore our website to learn more and if you still have questions, just contact us!</p>
           </div>
-                <ul class="list-inline banner-social-buttons">
-               <li class="list-inline-item">
-                <a href="https://github.com/MariannaUcy95/epl435" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-            </ul>
         </div>
       </div>
     </section>
@@ -601,7 +609,7 @@
             </div>
             <div style="display:inline">
                 <a href="index.php#aboutus">About us</a><br>
-                <a href="index.php#contactus">Contact us</a><br>
+                <a href="index.php#contact">Contact us</a><br>
                 <div id="social">
                     <a href="" class="fa fa-facebook"></a>
                     <a href="" class="fa fa-twitter"></a>

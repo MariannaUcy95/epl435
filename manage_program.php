@@ -8,9 +8,7 @@
     <meta name="author" content="">
 
     <title>The Fitness Club</title>
-      <!--modal-css--->        
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      
+  
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,29 +24,28 @@
       <link href="css/grayscale.css" rel="stylesheet">
       <link href="css/tips.css" rel="stylesheet">
         <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="swiper-4.2.2/dist/css/swiper.min.css">
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
       <style>
   
     .swiper-container {
-      width: 100%;
-      height: 300px;
+      width: 40%;
+      height: 77%;
       margin: 20px auto;
-        margin-top: 180px;
+        margin-top: 190px;
     }
-    .swiper-slide {
+   .swiper-slide {
       text-align: center;
       font-size: 18px;
       background: #fff;
+           /* display: -webkit-box; */
+   /* display: -ms-flexbox;*
+    /* display: -webkit-flex; */
+    /* display: flex; */
+    /* -webkit-box-pack: center; */
 
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
       -ms-flex-pack: center;
       -webkit-justify-content: center;
       justify-content: center;
@@ -57,29 +54,32 @@
       -webkit-align-items: center;
       align-items: center;
     }
-    .append-buttons {
+   .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
       text-align: center;
-      margin-top: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      color:#000;
+      opacity: 1;
+      background: rgba(0,0,0,0.2);
     }
-    .append-buttons a {
-      display: inline-block;
-      border: 1px solid #007aff;
-      color: #007aff;
-      text-decoration: none;
-      padding: 4px 10px;
-      border-radius: 4px;
-      margin: 0 10px;
-      font-size: 13px;
+    .swiper-pagination-bullet-active {
+      color:#fff;
+      background: #007aff;
     }
   </style>
       
   </head>
-  <body id="page-top">
+  <body id="page-top" style="background-image:url('images/contactus.jpeg');background-repeat:no-repeat;  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
 
      <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href=""><img src="images/img_black.png" style="width:200px;"></a>
+          <a class="navbar-brand js-scroll-trigger" href="client_profile.php#page-top"><img src="images/img_black.png" style="width:200px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -87,13 +87,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#page-top"><i class="fa fa-home"></i> Home</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
              <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="tips_page.php"><i class="material-icons">lightbulb_outline</i> Tips&amp;Tricks</a>
+              <a class="nav-link js-scroll-trigger" href="tips_page.php"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
             </li> 
             <li class="dropdown">
-              <a class="nav-link js-scroll-trigger" href="#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
                     <div class="dropdown-content">
                         <a href="classZumbaClient.php">Zumba</a>
                         <a href="classYogaClient.php">Power Yoga</a>
@@ -106,12 +106,12 @@
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
-                        <a href="facilities.php#main_workout_area">Main Workout Area</a>
-                        <a href="facilities.php#cardio_area">Cardio Area</a>
-                        <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
-                        <a href="facilities.php#personal_training">Personal Training</a>
-                        <a href="facilities.php#other_facilities">Other Facilities</a>
+                        <a href="facilities1.php#main_workout_area">Main Workout Area</a>
+                        <a href="facilities1.php#cardio_area">Cardio Area</a>
+                        <a href="facilities1.php#group_exercise_classes">Group Exercise Classes</a>
+                        <a href="facilities1.php#sports_fac">Sports Facilities</a>
+                        <a href="facilities1.php#personal_training">Personal Training</a>
+                        <a href="facilities1.php#other_facilities">Other Facilities</a>
                 </div>
             </li>            
             <li class="nav-item">
@@ -128,7 +128,7 @@
                     <a href="view_profile.php">View Profile</a>
                     <a href="edit_profile.php">Edit Profile</a>
                     <a href="request_gym_program_page.php">Request gym program</a>
-                    <a href="view_edit_program.php">Manage Daily Gym Program</a>
+                    <a href="manage_program.php">Manage Daily Gym Program</a>
                     <a href="logout.php">Log out</a>
                 </div>
             </li>
@@ -136,69 +136,160 @@
         </div>
       </div>
     </nav>
-          <div class="swiper-container">
-        <div class="swiper-wrapper"></div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+            <!-- Swiper -->
+      <br>
+      <br>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <br>
+          <h5 style="margin-bottom:12px">Aerobic/Cardio</h5>
+          <h6 style="margin-bottom:12px">Treadmill(20m)</h6>
+          <img src="images/treadmill.jpg" style="width:250px;height:200px"><br><br>
+          <button class="clickable program">
+              <img src="images/cancel.png" width="80px" height="80px">
+          </button>
+          <button class="program">
+              <img src="images/tick.png" width="115px" height="95px">
+          </button>
+        <br>
+        </div>
+        <div class="swiper-slide">
+          <br>
+          <h5 style="margin-bottom:12px">Aerobic/Cardio</h5>
+          <h6 style="margin-bottom:12px">Elliptical(20m)</h6>
+          <img src="images/cardioarea3.png" style="width:250px;height:200px"><br><br>
+          <button class="clickable program">
+              <img src="images/cancel.png" width="80px" height="80px">
+          </button>
+          <button class="program">
+              <img src="images/tick.png" width="115px" height="95px">
+          </button>
+        <br>
+        </div>
+        <div class="swiper-slide">
+          <br>
+          <h5 style="margin-bottom:12px">Abs &amp; CORE</h5>
+          <h6 style="margin-bottom:12px">Planks(3x30sec)</h6>
+          <img src="images/planks.jpg" style="width:250px;height:200px"><br><br>
+          <button class="clickable program">
+              <img src="images/cancel.png" width="80px" height="80px">
+          </button>
+          <button class="program">
+              <img src="images/tick.png" width="115px" height="95px">
+          </button>
+        <br>
+        </div>
+        <div class="swiper-slide">
+          <br>
+          <h5 style="margin-bottom:12px">Abs &amp; Core</h5>
+          <h6 style="margin-bottom:12px">Superman(3x10reps)</h6>
+          <img src="images/supermanexercise.jpg" style="width:250px;height:200px"><br><br>
+          <button class="clickable program">
+              <img src="images/cancel.png" width="80px" height="80px">
+          </button>
+          <button class="program">
+              <img src="images/tick.png" width="115px" height="95px">
+          </button>
+        <br>
+        </div>
+        <div class="swiper-slide">
+          <br>
+          <h5 style="margin-bottom:12px">Arms &amp; Shoulders</h5>
+          <h6 style="margin-bottom:12px">Lat pull down (3x10reps)</h6>
+          <img src="images/latpulldown.jpg" style="width:250px;height:200px"><br><br>
+          <button class="clickable program">
+              <img src="images/cancel.png" width="80px" height="80px">
+          </button>
+          <button class="program">
+              <img src="images/tick.png" width="115px" height="95px">
+          </button>
+        <br>
+        </div>
+   <div class="swiper-slide">
+          <br>
+          <h5 style="margin-bottom:12px">Arms &amp; Shoulders</h5>
+          <h6 style="margin-bottom:12px">Cable Curl(3x10reps)</h6>
+          <img src="images/cablecurl.jpg" style="width:250px;height:200px"><br><br>
+          <button class="clickable program">
+              <img src="images/cancel.png" width="80px" height="80px">
+          </button>
+          <button class="program">
+              <img src="images/tick.png" width="115px" height="95px">
+          </button>
+        <br>
+        </div>
+        <div class="swiper-slide">
+          <br>
+          <h5 style="margin-bottom:12px">Glutes &amp; Legs</h5>
+          <h6 style="margin-bottom:12px">Leg Curl(3x10reps)</h6>
+          <img src="images/legcurl.jpg" style="width:250px;height:200px"><br><br>
+          <button class="clickable program">
+              <img src="images/cancel.png" width="80px" height="80px">
+          </button>
+          <button class="program">
+              <img src="images/tick.png" width="115px" height="95px">
+          </button>
+        <br>
+        </div>
+      <div class="swiper-slide">
+          <br>
+          <h5 style="margin-bottom:12px">Glutes &amp; Legs</h5>
+          <h6 style="margin-bottom:12px">Squats(3x10reps)</h6>
+          <img src="images/squats.jpg" style="width:250px;height:200px"><br><br>
+          <button class="clickable program">
+              <img src="images/cancel.png" width="80px" height="80px">
+          </button>
+          <button class="program">
+              <img src="images/tick.png" width="115px" height="95px">
+          </button>
+        <br>
+        </div>
+   <div class="swiper-slide">
+          <br>
+          <h5 style="margin-bottom:12px">Glutes &amp; Legs</h5>
+          <h6 style="margin-bottom:12px">Leg Press</h6>
+          <img src="images/legspress.jpg" style="width:250px;height:200px"><br><br>
+          <button class="clickable program">
+              <img src="images/cancel.png" width="80px" height="80px">
+          </button>
+          <button class="program">
+              <img src="images/tick.png" width="115px" height="95px">
+          </button>
+        <br>
+        </div>
+  <div class="swiper-slide">
+          <br>
+          <h5 style="margin-bottom:12px">Glutes &amp; Legs</h5>
+          <h6 style="margin-bottom:12px">Leg extension</h6>
+          <img src="images/legextension.jpg" style="width:250px;height:200px"><br><br>
+          <button class="clickable program">
+              <img src="images/cancel.png" width="80px" height="80px">
+          </button>
+          <button class="program">
+              <img src="images/tick.png" width="115px" height="95px">
+          </button>
+        <br>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+      
+    <div class="swiper-pagination"></div>
   </div>
-  <p class="append-buttons">
-    <a href="#" class="slide-1">Slide 1</a>
-    <a href="#" class="slide-5">Slide 5</a>
-    <a href="#" class="slide-10">Slide 10</a>
-  </p>
+
   <!-- Swiper JS -->
-  <script src="swiper-master/dist/js/swiper.min.js"></script>
+  <script src="swiper-4.2.2/dist/js/swiper.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
-      if ( document.documentElement.clientWidth	 >= 600) {      
-          $slides=3;
-        } 
-    else if ( document.documentElement.clientWidth<600){
-        $slides=1;     
-    }
-      var swiper = new Swiper('.swiper-container', {
-      slidesPerView: $slides,
-      centeredSlides: true,
-      spaceBetween: 30,
+    var swiper = new Swiper('.swiper-container', {
       pagination: {
         el: '.swiper-pagination',
-        type: 'fraction',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
       },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      virtual: {
-        slides: (function () {
-          var slides = [];
-         // for (var i = 0; i < 10; i += 1) {
-            var x=document.createElement("BUTTON");
-            x.innerHTML("Do something");
-            var y=document.getElementsByTagName("slides")[0];
-            slides.push(document.y.appendChild(x));
-            slides.push('alli malakia' + 2);
-              slides.push('werwtr' + 3);
-            slides.push('alli malakia' + 4);
-          //}
-          return slides;
-        }()),
-      },
-    });
-    document.querySelector('.slide-1').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.slideTo(0, 0);
-    });
-    document.querySelector('.slide-5').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.slideTo(5, 0);
-    });
-    document.querySelector('.slide-10').addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.slideTo(10, 0);
     });
   </script>
       

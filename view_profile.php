@@ -32,7 +32,7 @@
     <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/img_white.png" style="width:250px;"></a>
+        <a class="navbar-brand js-scroll-trigger" href="client_profile.php#page-top"><img src="images/img_white.png" style="width:250px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -40,10 +40,10 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#masthead"><i class="fa fa-home"></i> Home</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
              <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="client_profile.php#tips"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
+              <a class="nav-link js-scroll-trigger" href="tips_page.php"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
             </li>    
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="client_profile.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
@@ -59,16 +59,16 @@
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="client_profile.php#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
-                        <a href="facilities.php#main_workout_area">Main Workout Area</a>
-                        <a href="facilities.php#cardio_area">Cardio Area</a>
-                        <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
-                        <a href="facilities.php#personal_training">Personal Training</a>
-                        <a href="facilities.php#other_facilities">Other Facilities</a>
+                        <a href="facilities1.php#main_workout_area">Main Workout Area</a>
+                        <a href="facilities1.php#cardio_area">Cardio Area</a>
+                        <a href="facilities1.php#group_exercise_classes">Group Exercise Classes</a>
+                        <a href="facilities1.php#sports_fac">Sports Facilities</a>
+                        <a href="facilities1.php#personal_training">Personal Training</a>
+                        <a href="facilities1.php#other_facilities">Other Facilities</a>
                 </div>
             </li>           
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="client_profile.php#about"><i class="fa fa-info"></i> About us</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#aboutus"><i class="fa fa-info"></i> About us</a>
             </li>    
                <li class="nav-item">
                    <a class="nav-link js-scroll-trigger" href="client_profile.php#contact"><i class="fa fa-phone"></i> Contact us</a>
@@ -90,7 +90,7 @@
       </div>
     </nav>
       
-        <header class="masthead" >
+        <header class="masthead" style="background-image:none!important;background-color:#4D4D4D !important;">
            <div class="intro-body">
         <div id="readonly-form" style="margin-top:200px;color:black;margin-bottom:30px;">
             <center>
@@ -98,18 +98,7 @@
                               <h3>My Profile</h3>
                           <div id="profilepic">
                             <h4>Profile Picture</h4>
-                              <?php
-                                    $conn = mysqli_connect("localhost", "root", "", "the fitness club");
-
-                                    if (!$conn) {
-                                        die("Connection failed: " . mysqli_connect_error());
-                                    }
-                                    $id=$_GET['id'];
-                                    $query="SELECT * FROM gymclient WHERE Username='$id'";
-                                    $result = mysqli_query($conn, $query); 
-                                    $row=mysqli_fetch_assoc($result); 
-                                        echo '<div style="background-color:white;width:100px;height:100px"><img src="'.$row['ProfileImage'].' style="width:100px;height:100px"></div>'
-                                    ?>
+                              
                               
                           </div>
                          <br>
@@ -118,28 +107,26 @@
                             <div id="grid">
                             <label>Name</label>        
                                 <?php
-                                echo '<input type="text" value="'. $row['Name'].'" readonly>';
+                                echo '<input type="text" value="Marianna" readonly>';
                                 ?>
                             <label>Surname</label> 
                                <?php
-                                echo '<input type="text" value="'. $row['Surname'].'" readonly>';
+                                echo '<input type="text" value="Hatzidemetriou" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>Gender</label>
                                   <?php
-                                if($row['Name']==0)
+                    
                                     echo '<input type="text" value="Female" readonly>';
-                                else if ($row['Name']==1)
-                                    echo '<input type="text" value="Male" readonly>';
-                                else
-                                    echo '<input type="text" value="Other" readonly>';
+                            
+                                
                                 ?>
                             <br>
                             <br>
                             <label>Date of Birth</label>
                                  <?php
-                                echo '<input type="text" value="'. $row['DateofBirth'].'" readonly>';
+                                echo '<input type="text" value="04/12/1995" readonly>';
                                 ?>
                             </div>
                             <br>
@@ -148,33 +135,33 @@
                             <h3>Communication details</h3>
                             <label>Phone Number</label>
                                 <?php
-                                echo '<input type="text" value="'. $row['Telephone'].'" readonly>';
+                                echo '<input type="text" value="12345678" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>Address</label>
                             <?php
-                                echo '<input type="text" value="'. $row['Address'].'" readonly>';
+                                echo '<input type="text" value="Leoforos Larnakos" readonly>';
                                 ?>
                             <label>Postal Code</label>
                                <?php
-                                echo '<input type="text" value="'. $row['PostalCode'].'" readonly>';
+                                echo '<input type="text" value="1234" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>City</label>
                                 <?php
-                                echo '<input type="text" value="'. $row['City'].'" readonly>';
+                                echo '<input type="text" value="Nicosia" readonly>';
                                 ?>
                             <label>Country</label>
                                 <?php
-                                echo '<input type="text" value="'. $row['Country'].'" readonly>';
+                                echo '<input type="text" value="Cyprus" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>Email Address</label>
                                   <?php
-                                echo '<input type="text" value="'. $row['EmailAddress'].'" readonly>';
+                                echo '<input type="text" value="mchatz05@thefitnessclub.com" readonly>';
                                 ?>
                          </div>
                          <br>
@@ -182,20 +169,20 @@
                             <h3>Security Details</h3>
                             <label>Username</label>
                                   <?php
-                                echo '<input type="text" value="'. $row['Username'].'" readonly>';
+                                echo '<input type="text" value="mchatz05" readonly>';
                                 ?>
                             <br>
                             <br>
                             <label>Password</label>
                                    <?php
-                                echo '<input type="text" value="'. $row['Password'].'" readonly>';
+                                echo '<input type="password" value="1234" readonly>';
                                 ?>
                           </div>
                          <br>
-                           <?php
-                            $id=$_GET['id'];
-                            echo '<a href="edit_profile.php?id='.$id.'"><button id="editbtn" class="btn btn-default">EDIT</button></a>';
-                            ?>
+                      
+            
+                            <a href="edit_profile.php"><button id="editbtn" class="btn btn-default">EDIT</button></a>;
+                           
                     </div>  
                 </center>
                </div>
@@ -207,11 +194,11 @@
                 <div style="display:inline">
                     <a href="client_profile.php#facilities">Facilities</a><br>
                     <a href="client_profile.php#classes">Classes</a><br>
-                    <a href="client_profile.php#tips&tricks">Tips&amp;Tricks</a><br>
+                    <a href="tips_page.php">Tips &amp; Tricks</a><br>
                 </div>
                 <div style="display:inline">
                     <a href="client_profile.php#aboutus">About us</a><br>
-                    <a href="client_profile.php#contactus">Contact us</a><br>
+                    <a href="client_profile.php#contact">Contact us</a><br>
                     <div id="social">
                         <a href="" class="fa fa-facebook"></a>
                         <a href="" class="fa fa-twitter"></a>

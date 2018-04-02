@@ -64,7 +64,7 @@
                         <a href="facilities.php#main_workout_area">Main Workout Area</a>
                         <a href="facilities.php#cardio_area">Cardio Area</a>
                         <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
+                        <a href="facilities.php#sports_fac">Sports Facilities</a>
                         <a href="facilities.php#personal_training">Personal Training</a>
                         <a href="facilities.php#other_facilities">Other Facilities</a>
                 </div>

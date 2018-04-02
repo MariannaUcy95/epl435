@@ -22,9 +22,10 @@
       <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
       <link href="css/grayscale.css" rel="stylesheet">
-
+  
+      
   </head>
-  <body>
+  <body >
       <?php
       		session_start();
       ?>
@@ -42,7 +43,7 @@
               <a class="nav-link js-scroll-trigger" href="client_profile.php#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
              <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="client_profile.php#tips"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tips&amp;Tricks</a>
+              <a class="nav-link js-scroll-trigger" href="tips_page.php"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Tips &amp; Tricks</a>
             </li>    
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="client_profile.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
@@ -58,12 +59,12 @@
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="client_profile.php#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
-                        <a href="facilities.php#main_workout_area">Main Workout Area</a>
-                        <a href="facilities.php#cardio_area">Cardio Area</a>
-                        <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
-                        <a href="facilities.php#personal_training">Personal Training</a>
-                        <a href="facilities.php#other_facilities">Other Facilities</a>
+                        <a href="facilities1.php#main_workout_area">Main Workout Area</a>
+                        <a href="facilities1.php#cardio_area">Cardio Area</a>
+                        <a href="facilities1.php#group_exercise_classes">Group Exercise Classes</a>
+                        <a href="facilities1.php#sports_fac">Sports Facilities</a>
+                        <a href="facilities1.php#personal_training">Personal Training</a>
+                        <a href="facilities1.php#other_facilities">Other Facilities</a>
                 </div>
             </li>           
             <li class="nav-item">
@@ -82,18 +83,18 @@
                     <a href="view_profile.php">View Profile</a>
                     <a href="edit_profile.php">Edit Profile</a>
                     <a href="request_gym_program_page.php">Request gym program</a>
-                  <a href="view_edit_program.php">Manage Daily Gym Program</a>
+                  <a href="manage_program.php">Manage Daily Gym Program</a>
                     <a href="logout.php">Log out</a>
               </div>
           </div>  
       </div>
     </nav>
-        <header class="masthead">
+        <header class="masthead" style="background-image:none!important;background-color:#4D4D4D !important;">
               <div class="intro-body">
         
             <div id="request_for_gym_program">
             <center>
-                <h3>Request Gym Program</h3>
+                <h3 style="color:white">Request Gym Program</h3>
               <div class="alert alert-success" id="payment">
                 <strong><i class="material-icons">announcement</i></strong> No payment needed for creating a daily gym program!
                 </div>
@@ -101,23 +102,24 @@
                 <strong><i class="material-icons">announcement</i></strong> The program is made especially for you by a proffesional personal trainer!
                 </div>
             <div id="enter-details" style="margin-bottom:30px;">
+                <p><span class="error">* required field.</span></p>
                 <h4>Physical Condition</h4>
                 <div id="details-form">
                     <div id="grid">
                     <label>Weight</label>                
-                        <input type="number" min="20" max="200" name="adults" class="quantity" value="30" required/>
+                        <span class="error">* </span> <input type="number" min="20" max="200" name="adults" class="quantity" value="30" required>
                     <br>
                     <br>    
                     <label>Height</label> 
-                        <input type="number" min="100" max="200" name="children" class="quantity" value="150" required />
+                        <span class="error">* </span><input type="number" min="100" max="200" name="children" class="quantity" value="150" required >
                     <br>
                     <br>
-                    <label>Heath Problems</label>
+                        <label>Heath Problems<span class="error" style="color:#FF0000>">*</span></label>
                         <input type="radio" name="healthproblems" value="Yes"> Yes 
                         <input type="radio" name="healthproblems" value="No"> No
                         <br>
                     <label>Medical History</label><br>
-                        <textarea></textarea><br>
+                        <textarea style="width:400px;height:100px"></textarea><br>
                     <div style="display:inline">
                         <label>Stamina</label>
                          <div class="slidecontainer">
@@ -137,26 +139,27 @@
                     </div>
                     <br>
                     <label>Previous Sports Experience</label><br>
-                    <textarea></textarea><br>
+                    <textarea  style="width:400px;height:100px"></textarea><br>
                 </div>
                 <br>
                 <div id="personalgoal">
                     <h4>Personal Goal</h4>
                     <div style="display:inline">
                         <label>Desired Weight</label>
-                        <input type="number" min="20" max="200" name="adults" class="quantity" value="40" required/>
+                        <span class="error">* </span><input type="number" min="20" max="200" name="adults" class="quantity" value="40" required/>
                     </div>
                     <br>
                     <br>
                      <div style="display:inline">
                          <label>Availability-visits per weak</label>
-                          <input type="number" min="1" max="7" name="adults" class="quantity" value="3" required/>
+                               <span class="error">* </span><input type="number" min="1" max="7" name="adults" class="quantity" value="3" required/>
                     </div>
                 </div>
                 <br>
                 <div id="exercisepurpose">
-                    <h4>Exercise purpose</h4>
-                    <center>
+                    <h4>Exercise purpose <span class="error" style="color:#FF0000>">*</span></h4>
+                    <center>    
+                      
                         <div id="purpose">
                             <input type="checkbox" id="health"><label for="health">&nbsp;Health</label><br>
                             <input type="checkbox" id="endurance"><label for="endurance">&nbsp;Endurance</label><br>
@@ -178,9 +181,9 @@
                     <h4>Muscle Groups to emphasize</h4>
                     <center>
                         <div id="emphasize">
-                            <input type="checkbox" id="armsandcore"><label for="armsandcore">&nbsp;Arms&amp;Core</label><br>
-                            <input type="checkbox" id="armsandshoulders"><label for="armsandshoulders">&nbsp;Arms&amp;Shoulders</label><br>
-                            <input type="checkbox" id="glutesandlegs"><label for="glutesandlegs">&nbsp;Glutes&amp;Legs</label><br>
+                            <input type="checkbox" id="armsandcore"><label for="armsandcore">&nbsp;Arms &amp; Core</label><br>
+                            <input type="checkbox" id="armsandshoulders"><label for="armsandshoulders">&nbsp; Arms&amp; Shoulders</label><br>
+                            <input type="checkbox" id="glutesandlegs"><label for="glutesandlegs">&nbsp;Glutes &amp; Legs</label><br>
                                  <div style="display:inline">
                                 <input type="checkbox" id="other"><label for="other">Other</label>&nbsp;<input type="text">
                             </div>
@@ -189,11 +192,10 @@
                 </div>
                 <br>
                 <div id="specialrequests">
-        
                     <div id="requests-form">
                     <h4>Special Requests</h4>
                     <header><i>Please write any special request you have.</i></header>
-                    <textarea name="requests" style="width:280px;"></textarea>
+                    <textarea name="requests"  style="width:400px;height:100px"></textarea>
                     </div>
                 </div>
                     <br>
@@ -212,11 +214,11 @@
                 <div style="display:inline">
                     <a href="client_profile.php#facilities">Facilities</a><br>
                     <a href="client_profile.php#classes">Classes</a><br>
-                    <a href="client_profile.php#tips&tricks">Tips&amp;Tricks</a><br>
+                    <a href="tips_page.php">Tips &amp; Tricks</a><br>
                 </div>
                 <div style="display:inline">
                     <a href="client_profile.php#aboutus">About us</a><br>
-                    <a href="client_profile.php#contactus">Contact us</a><br>
+                    <a href="client_profile.php#contact">Contact us</a><br>
                     <div id="social">
                         <a href="" class="fa fa-facebook"></a>
                         <a href="" class="fa fa-twitter"></a>

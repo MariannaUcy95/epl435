@@ -32,7 +32,7 @@
     <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/img_white.png" style="width:250px;"></a>
+        <a class="navbar-brand js-scroll-trigger" href="client_profile.php#page-top"><img src="images/img_white.png" style="width:250px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -40,10 +40,10 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#masthead"><i class="fa fa-home"></i> Home</a>
+              <a class="nav-link js-scroll-trigger" href="client_profile.php#page-top"><i class="fa fa-home"></i> Home</a>
             </li>    
              <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="client_profile.php#tips"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
+              <a class="nav-link js-scroll-trigger" href="tips_page.php"><i class="material-icons">lightbulb_outline</i> Tips &amp; Tricks</a>
             </li>    
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="client_profile.php#classes"><i class="fa fa-calendar"></i> Classes <i class="fa fa-caret-down"></i></a>
@@ -59,12 +59,12 @@
             <li class="dropdown">
               <a class="nav-link js-scroll-trigger" href="client_profile.php#facilities"><i class="material-icons" style="font-size:18px;">fitness_center</i> Facilities <i class="fa fa-caret-down"></i></a>
                  <div class="dropdown-content">
-                        <a href="facilities.php#main_workout_area">Main Workout Area</a>
-                        <a href="facilities.php#cardio_area">Cardio Area</a>
-                        <a href="facilities.php#group_exercise_classes">Group Exercise Classes</a>
-                        <a href="facilities.php#sports_facilities">Sports Facilities</a>
-                        <a href="facilities.php#personal_training">Personal Training</a>
-                        <a href="facilities.php#other_facilities">Other Facilities</a>
+                        <a href="facilities1.php#main_workout_area">Main Workout Area</a>
+                        <a href="facilities1.php#cardio_area">Cardio Area</a>
+                        <a href="facilities1.php#group_exercise_classes">Group Exercise Classes</a>
+                        <a href="facilities1.php#sports_fac">Sports Facilities</a>
+                        <a href="facilities1.php#personal_training">Personal Training</a>
+                        <a href="facilities1.php#other_facilities">Other Facilities</a>
                 </div>
             </li>           
             <li class="nav-item">
@@ -76,39 +76,27 @@
           </ul>
         </div>
           <div class="dropdown" style="float:right;">
-            <a href="edit_profile"><img src="images/avatar.png"style="width:50px;height:50px;"></a>
+            <a href="edit_profile"><img src="images/avatar.png"style="width:50px;height:50px;border-radious:50%;"></a>
               <br>
               <br>
               <div class="dropdown-content">
                     <a href="view_profile.php">View Profile</a>
                     <a href="edit_profile.php">Edit Profile</a>
-                    <a href="request_gym_program.php">Request gym program</a>
+                    <a href="request_gym_program_page.php">Request gym program</a>
+                  <a href="manage_program.php">Manage Daily Gym Program</a>
                     <a href="logout.php">Log out</a>
               </div>
           </div>  
       </div>
     </nav>
-        <header class="masthead" >
+        <header class="masthead" style="background-image:none!important;background-color:#4D4D4D !important;" >
            <div class="intro-body">
         <div id="readonly-form" style="margin-top:200px;color:black;margin-bottom:30px;">
             <center>
-                    <center>
                      <div id="enter-details" >
                               <h3>My Profile</h3>
                           <div id="profilepic">
                             <h4>Profile Picture</h4>
-                              <?php
-                                    $conn = mysqli_connect("localhost", "root", "", "the fitness club");
-
-                                    if (!$conn) {
-                                        die("Connection failed: " . mysqli_connect_error());
-                                    }
-                                    $id=$_GET['id'];
-                                    $query="SELECT * FROM gymclient WHERE Username='$id'";
-                                    $result = mysqli_query($conn, $query); 
-                                    $row=mysqli_fetch_assoc($result); 
-                                        echo '<div style="background-color:white;width:100px;height:100px"><img src="'.$row['ProfileImage'].' style="width:100px;height:100px"></div>'
-                                    ?>
                               
                           </div>
                          <br>
@@ -117,28 +105,25 @@
                             <div id="grid">
                             <label>Name</label>        
                                 <?php
-                                echo '<input type="text" value="'. $row['Name'].'" >';
+                                echo '<input type="text" value="Marianna" >';
                                 ?>
                             <label>Surname</label> 
                                <?php
-                                echo '<input type="text" value="'. $row['Surname'].'" >';
+                                echo '<input type="text" value="Hatzidemetriou" >';
                                 ?>
                             <br>
                             <br>
                             <label>Gender</label>
                                   <?php
-                                if($row['Name']==0)
+                              
                                     echo '<input type="text" value="Female" >';
-                                else if ($row['Name']==1)
-                                    echo '<input type="text" value="Male" >';
-                                else
-                                    echo '<input type="text" value="Other">';
+                              
                                 ?>
                             <br>
                             <br>
                             <label>Date of Birth</label>
                                  <?php
-                                echo '<input type="text" value="'. $row['DateofBirth'].'">';
+                                echo '<input type="text" value="04/12/1995">';
                                 ?>
                             </div>
                             <br>
@@ -147,33 +132,33 @@
                             <h3>Communication details</h3>
                             <label>Phone Number</label>
                                 <?php
-                                echo '<input type="text" value="'. $row['Telephone'].'">';
+                                echo '<input type="text" value="12345678">';
                                 ?>
                             <br>
                             <br>
                             <label>Address</label>
                             <?php
-                                echo '<input type="text" value="'. $row['Address'].'" >';
+                                echo '<input type="text" value="Leoforos Larnakos" >';
                                 ?>
                             <label>Postal Code</label>
                                <?php
-                                echo '<input type="text" value="'. $row['PostalCode'].'" >';
+                                echo '<input type="text" value="1234" >';
                                 ?>
                             <br>
                             <br>
                             <label>City</label>
                                 <?php
-                                echo '<input type="text" value="'. $row['City'].'">';
+                                echo '<input type="text" value="Nicosia">';
                                 ?>
                             <label>Country</label>
                                 <?php
-                                echo '<input type="text" value="'. $row['Country'].'">';
+                                echo '<input type="text" value="Cyprus">';
                                 ?>
                             <br>
                             <br>
                             <label>Email Address</label>
                                   <?php
-                                echo '<input type="text" value="'. $row['EmailAddress'].'" >';
+                                echo '<input type="text" value="mchatz05@thefitnessclub.com" >';
                                 ?>
                          </div>
                          <br>
@@ -181,13 +166,17 @@
                             <h3>Security Details</h3>
                             <label>Username</label>
                                   <?php
-                                echo '<input type="text" value="'. $row['Username'].'" >';
+                                echo '<input type="text" value="mchatz05" >';
                                 ?>
                             <br>
                             <br>
                             <label>Password</label>
                                    <?php
-                                echo '<input type="text" value="'. $row['Password'].'" >';
+                                echo '<input type="password" value="1234" >';
+                                ?>
+                              <label>Confirm Password</label>
+                                   <?php
+                                echo '<input type="password" value="1234" >';
                                 ?>
                           </div>
                          <br>
@@ -203,11 +192,11 @@
                 <div style="display:inline">
                     <a href="client_profile.php#facilities">Facilities</a><br>
                     <a href="client_profile.php#classes">Classes</a><br>
-                    <a href="client_profile.php#tips&tricks">Tips&amp;Tricks</a><br>
+                    <a href="tips_page.php">Tips &amp;Tricks</a><br>
                 </div>
                 <div style="display:inline">
                     <a href="client_profile.php#aboutus">About us</a><br>
-                    <a href="client_profile.php#contactus">Contact us</a><br>
+                    <a href="client_profile.php#contact">Contact us</a><br>
                     <div id="social">
                         <a href="" class="fa fa-facebook"></a>
                         <a href="" class="fa fa-twitter"></a>

@@ -29,7 +29,7 @@
             document.getElementById(hide1).style.display='none';
         }
     </script>
-  <body id="page-top">
+  <body id="page-top" style="background-color:#4D4D4D">
      
 	
     <!-- Intro Header -->
@@ -38,17 +38,16 @@
     <div class="mastheadkotsia grid-container" >
         
       <div class="intro-body grid-item">
-             
                     <div class="requests" id="requests" style="float:left;margin-left:10%;margin-top:8%;">
                         <h3 class="omb_authTitle" style="color:white;">Requests</h3>
                         <div class="requestsgym" style="color:black;">
 							<ul class="req">
-							     <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 1</li></a>
-								 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 2</li></a>
-								 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 3</li></a>
-								  <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 4</li></a>
-								 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 5</li></a>
-							 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 6</li></a>
+							     <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 1: 4/2/2018<br> Constantina Tseriotou</li></a>
+								 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 2: 4/2/2018<br> Marianna Hatzidemetriou</li></a>
+								 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 3: 4/2/2018<br> Erasmia Shimitra</li></a>
+								  <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 4: 4/2/2018<br> Constantina Tseriotou</li></a>
+								 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 5: 4/2/2018<br> Constantina Tseriotou</li></a>
+							 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 6: 4/2/2018<br> Constantina Tseriotou</li></a>
                             </ul>
                         </div>	
                 </div>
@@ -95,7 +94,7 @@
                     </div>
                     <br>
                     <label>Previous Sports Experience</label><br>
-                    <textarea readonly>Volley</textarea><br>
+                    <textarea  style="width:400px;height:100px" readonly>Volley</textarea><br>
                 </div>
                 <br>
                 <div id="personalgoal">
@@ -135,20 +134,20 @@
                 <div id="specialrequests">        
                     <div id="requests-form">
                     <h4>Special Requests</h4>
-                    <textarea name="requests" style="width:280px;" readonly>I would like to gain weight as soon as possible.</textarea>
+                    <textarea  name="requests"  style="width:400px;height:100px" readonly>I would like to gain weight as soon as possible.</textarea>
                     </div>
                 </div>
              <?php echo '</form>'; ?>
                 <br>
                 <br>
-                <button  id="reply" class="btn btn-default">Reply</button>
+                <a  href="edit_request.php"><button  id="reply" class="btn btn-default">Create Program</button></a>
                 <button id="edit" class="btn btn-default">Print</button>
             </div>           
             </center>
             </div>
         </div>
       </div>
-      <footer style="background-color:black;">
+      <footer style="background-color:#4D4D4D">
     <center>  	<p>&copy; The Fitness Club 2018</p>  </center> 
 </footer>
           <!-- Bootstrap core JavaScript -->
