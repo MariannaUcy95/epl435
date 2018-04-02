@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>The Fitness Club</title>
       <!--modal-css--->        
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -431,7 +432,16 @@
                                         <div class="grid-item"><input type="password" style="border-bottom: 2px solid #808080 !important;color:black;" name="confirm_pass" placeholder="...." required></div>
                                     </div><br><br>
                                     <center><input classs="btn btn-default" name="submit" id="registerbtn" type="submit" value="Join us"></center>
-                                    
+                                    <script>
+											function displayVals() {
+											  var singleValues = $( "#username" ).val();
+											  if(singleValues=="mchatz05") 
+												  alert("Username already exists");
+											}
+											$("div #register-client input").change(displayVals);
+
+											displayVals();
+											</script>
                                 </form>
                                 </pre>
                             </div>

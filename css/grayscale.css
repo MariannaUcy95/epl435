@@ -3,6 +3,9 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+body img{
+    max-width: 100%;
+}
 .program{
     background-color: transparent;
     border: none;
@@ -270,7 +273,7 @@ footer{
 
 .dropdown-content a {
     float: none;
-    color: b;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
