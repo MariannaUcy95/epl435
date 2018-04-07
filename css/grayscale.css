@@ -1,4 +1,5 @@
 /*!
+/*!
  * Start Bootstrap - Grayscale v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
@@ -16,6 +17,10 @@ body img{
     width: 1000px;
     height: 500px;
 }
+
+.highlight { background-color: rgba(218,32,62,0.5);
+	color: white;
+	font-size: 24px; }
 hr{
 background-color: white !important;
     font-size: 6px !important;
