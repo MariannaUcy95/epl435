@@ -22,6 +22,8 @@
       <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
       <link href="css/grayscale.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
   </head>
     <script>
         function hideshow(hide1,show1){
@@ -40,7 +42,7 @@
       <div class="intro-body grid-item">
                     <div class="requests" id="requests" style="float:left;margin-left:10%;margin-top:8%;">
                         <h3 class="omb_authTitle" style="color:white;">Requests</h3>
-                        <div class="requestsgym" style="color:black;">
+                        <div id="requ" class="requestsgym" style="color:black;">
 							<ul class="req">
 							     <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 1: 4/2/2018<br> Constantina Tseriotou</li></a>
 								 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 2: 4/2/2018<br> Marianna Hatzidemetriou</li></a>
@@ -49,6 +51,14 @@
 								 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 5: 4/2/2018<br> Constantina Tseriotou</li></a>
 							 <a id="list" onclick="hideshow('h','preview');" style="color:black;"><li class="item" style="border-bottom:0px ;color:black;">Request 6: 4/2/2018<br> Constantina Tseriotou</li></a>
                             </ul>
+                            <script>
+                      $("#requ li").click(function() {
+                      var selected = $(this).hasClass("highlight");
+                      $("#requ li").removeClass("highlight");
+                    if(!selected)
+                    $(this).addClass("highlight");
+                    });
+                    </script>
                         </div>	
                 </div>
           </div>  
